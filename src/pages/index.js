@@ -1,118 +1,154 @@
-import Image from "next/image";
-import { Inter } from "next/font/google";
+import React, { useEffect, useState } from 'react';
+import { Menu } from 'lucide-react';
+import { Button } from "@/components/ui/button";
+import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import dynamic from 'next/dynamic';
+import 'leaflet/dist/leaflet.css';
 
-const inter = Inter({ subsets: ["latin"] });
+const MapContainer = dynamic(() => import('react-leaflet').then(mod => mod.MapContainer), { ssr: false });
+const TileLayer = dynamic(() => import('react-leaflet').then(mod => mod.TileLayer), { ssr: false });
+const Marker = dynamic(() => import('react-leaflet').then(mod => mod.Marker), { ssr: false });
+const Popup = dynamic(() => import('react-leaflet').then(mod => mod.Popup), { ssr: false });
 
-export default function Home() {
+const forestData = [
+  { id: 1, name: "Chambal National Sanctuary", lat: 26.6492, lon: 77.9064, info: "Known for its pristine riverine ecosystem and as a habitat for the critically endangered gharial." },
+  { id: 2, name: "Sundarbans", lat: 21.9497, lon: 89.1833, info: "The largest mangrove forest in the world, home to the Bengal tiger and numerous other species." },
+  { id: 3, name: "Namdapha National Park", lat: 27.4000, lon: 96.3833, info: "One of the largest protected areas in Eastern Himalaya, known for its rich biodiversity." },
+  { id: 4, name: "Gir National Park", lat: 21.1239, lon: 70.8167, info: "The last remaining natural habitat of the Asiatic lion in the world." },
+  { id: 5, name: "Bhadra Wildlife Sanctuary", lat: 13.7256, lon: 75.6614, info: "A tiger reserve in the Western Ghats, known for its diverse flora and fauna." }
+];
+
+const HomePage = () => {
+  const [selectedForest, setSelectedForest] = useState(null);
+  const [isNavOpen, setIsNavOpen] = useState(false);
+  const [isMounted, setIsMounted] = useState(false);
+
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
+
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      // Fix for default marker icon
+      const L = require('leaflet');
+      delete L.Icon.Default.prototype._getIconUrl;
+      L.Icon.Default.mergeOptions({
+        iconRetinaUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.3.1/images/marker-icon-2x.png',
+        iconUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.3.1/images/marker-icon.png',
+        shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.3.1/images/marker-shadow.png',
+      });
+    }
+  }, []);
+
   return (
-    <main
-      className={`flex min-h-screen flex-col items-center justify-between p-24 ${inter.className}`}
-    >
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/pages/index.js</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <div className="min-h-screen flex flex-col bg-green-50">
+      <header className="bg-green-800 text-white p-4 flex items-center justify-between sticky top-0 z-50">
+        <Sheet open={isNavOpen} onOpenChange={setIsNavOpen}>
+          <SheetTrigger asChild>
+            <Button variant="ghost" size="icon" className="text-white hover:bg-green-700">
+              <Menu className="h-6 w-6" />
+            </Button>
+          </SheetTrigger>
+          <SheetContent side="left" className="bg-green-700 text-white">
+            <nav className="flex flex-col gap-4 mt-8">
+              <a href="#" className="text-lg hover:underline transition-colors duration-200 hover:text-green-200">Home</a>
+              <a href="#" className="text-lg hover:underline transition-colors duration-200 hover:text-green-200">About</a>
+              <a href="#" className="text-lg hover:underline transition-colors duration-200 hover:text-green-200">Forests</a>
+              <a href="#" className="text-lg hover:underline transition-colors duration-200 hover:text-green-200">Gallery</a>
+              <a href="#" className="text-lg hover:underline transition-colors duration-200 hover:text-green-200">Contact</a>
+            </nav>
+          </SheetContent>
+        </Sheet>
+        <div className="text-center flex-grow">
+          <h1 className="text-3xl font-bold">Discover Indian Forests</h1>
+          <p className="text-xl">Explore the diverse and captivating forests of India</p>
         </div>
-      </div>
+      </header>
 
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-full sm:before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full sm:after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700/10 after:dark:from-sky-900 after:dark:via-[#0141ff]/40 before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
+      <main className="flex-grow p-4">
+        <div className="bg-white shadow-lg rounded-lg overflow-hidden mb-8">
+          <div className="h-[60vh] relative">
+            {isMounted && (
+              <MapContainer center={[20.5937, 78.9629]} zoom={5} style={{ height: '100%', width: '100%', zIndex: 1 }}>
+                <TileLayer
+                  url={`https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png`}
+                  attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+                />
+                {forestData.map((forest) => (
+                  <Marker key={forest.id} position={[forest.lat, forest.lon]}>
+                    <Popup>
+                      <Card className="border-none shadow-none">
+                        <CardHeader className="pb-2">
+                          <CardTitle className="text-lg font-bold">{forest.name}</CardTitle>
+                        </CardHeader>
+                        <CardContent>
+                          <CardDescription>{forest.info}</CardDescription>
+                        </CardContent>
+                      </Card>
+                    </Popup>
+                  </Marker>
+                ))}
+              </MapContainer>
+            )}
+          </div>
+        </div>
 
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
+        <div className="space-y-8">
+          <Card className="bg-green-100 border-green-300">
+            <CardHeader>
+              <CardTitle className="text-2xl text-green-800">Discover the Wonders of Indian Forests</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p className="text-green-700">India is home to some of the most diverse and breathtaking forests in the world. From the mangroves of Sundarbans to the deciduous forests of Gir, each ecosystem tells a unique story of biodiversity and natural beauty.</p>
+            </CardContent>
+          </Card>
 
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <Card className="bg-green-50 border-green-200 hover:shadow-md transition-shadow duration-300">
+              <CardHeader>
+                <CardTitle className="text-xl text-green-800">Conservation Efforts</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-green-700">Learn about the ongoing conservation efforts to protect Indias precious forest ecosystems and the wildlife they support.</p>
+                <Button className="mt-4 bg-green-600 hover:bg-green-700">Read More</Button>
+              </CardContent>
+            </Card>
 
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Discover and deploy boilerplate example Next.js&nbsp;projects.
-          </p>
-        </a>
+            <Card className="bg-green-50 border-green-200 hover:shadow-md transition-shadow duration-300">
+              <CardHeader>
+                <CardTitle className="text-xl text-green-800">Plan Your Visit</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-green-700">Discover how you can experience the magic of Indian forests firsthand through eco-friendly tourism initiatives.</p>
+                <Button className="mt-4 bg-green-600 hover:bg-green-700">Explore Options</Button>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </main>
 
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50 text-balance`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+      <footer className="bg-green-800 text-white p-6 mt-12">
+        <div className="container mx-auto flex flex-col md:flex-row justify-between items-center">
+          <div className="mb-4 md:mb-0">
+            <h3 className="text-xl font-semibold mb-2">Stay Connected</h3>
+            <div className="flex gap-4">
+              <a href="#" className="text-white hover:text-green-200 transition-colors duration-200">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-instagram"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+              </a>
+              <a href="#" className="text-white hover:text-green-200 transition-colors duration-200">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-twitter"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/></svg>
+              </a>
+            </div>
+          </div>
+          <div className="text-center md:text-right">
+            <p>&copy; 2024 Indian Forests. All rights reserved.</p>
+            <p className="mt-2">Designed with 🌿 for nature lovers</p>
+          </div>
+        </div>
+      </footer>
+    </div>
   );
-}
+};
+
+export default HomePage;
