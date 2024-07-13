@@ -157,9 +157,9 @@ const HomePage = () => {
               <nav className="flex flex-col gap-4 mt-8">
                 <a href="#" className="text-lg hover:underline transition-colors duration-200 hover:text-green-200">Home</a>
                 <a href="#" className="text-lg hover:underline transition-colors duration-200 hover:text-green-200">About</a>
-                <a href="pyt" className="text-lg hover:underline transition-colors duration-200 hover:text-green-200">Plan Your Trip</a>
+                <a href="#" className="text-lg hover:underline transition-colors duration-200 hover:text-green-200">Forests</a>
                 <a href="#" className="text-lg hover:underline transition-colors duration-200 hover:text-green-200">Gallery</a>
-                <a href="ce" className="text-lg hover:underline transition-colors duration-200 hover:text-green-200">Conservation Efforts</a>
+                <a href="#" className="text-lg hover:underline transition-colors duration-200 hover:text-green-200">Contact</a>
               </nav>
             </SheetContent>
           </Sheet>
