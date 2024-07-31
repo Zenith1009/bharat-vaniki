@@ -1,0 +1,148 @@
+{
+    "forestData": [
+      {
+        "id": 1,
+        "name": "Kanha National Park",
+        "type": "National Park",
+        "lat": 22.3345,
+        "lon": 80.6115,
+        "state": "Madhya Pradesh",
+        "introduction": "Kanha National Park is one of the tiger reserves of India and the largest national park of Madhya Pradesh.",
+        "importance": "It's known for its population of Bengal tigers, Indian leopards, sloth bears, and Indian wild dogs.",
+        "protection": "Conservation efforts are crucial to maintain the park's biodiversity and protect endangered species like the hard-ground barasingha.",
+        "images": ["/api/placeholder/800/600", "/api/placeholder/800/600", "/api/placeholder/800/600"]
+      },
+      {
+        "id": 2,
+        "name": "Sundarbans National Park",
+        "type": "National Park",
+        "lat": 21.9497,
+        "lon": 88.9000,
+        "state": "West Bengal",
+        "introduction": "Sundarbans National Park is a UNESCO World Heritage Site and a biosphere reserve in West Bengal, India.",
+        "importance": "It's the largest single block of tidal halophytic mangrove forest in the world and home to the Bengal tiger.",
+        "protection": "Protecting the Sundarbans is vital for preserving its unique ecosystem and mitigating climate change impacts.",
+        "images": ["/api/placeholder/800/600", "/api/placeholder/800/600", "/api/placeholder/800/600"]
+      },
+      {
+        "id": 3,
+        "name": "Jim Corbett National Park",
+        "type": "National Park",
+        "lat": 29.5300,
+        "lon": 78.7747,
+        "state": "Uttarakhand",
+        "introduction": "Jim Corbett National Park is the oldest national park in India, established in 1936.",
+        "importance": "It's known for its Bengal tigers and diverse wildlife including elephants, leopards, and various bird species.",
+        "protection": "Conservation is essential to maintain the park's rich biodiversity and protect endangered species.",
+        "images": ["/api/placeholder/800/600", "/api/placeholder/800/600", "/api/placeholder/800/600"]
+      },
+      {
+        "id": 4,
+        "name": "Nagarhole National Park",
+        "type": "National Park",
+        "lat": 12.0500,
+        "lon": 76.1500,
+        "state": "Karnataka",
+        "introduction": "Nagarhole National Park, also known as Rajiv Gandhi National Park, is a wildlife reserve in Karnataka.",
+        "importance": "It supports a high density of tiger population and other wildlife like Indian bison, elephants, and leopards.",
+        "protection": "Preserving this park is crucial for maintaining the Western Ghats ecosystem and its diverse wildlife.",
+        "images": ["/api/placeholder/800/600", "/api/placeholder/800/600", "/api/placeholder/800/600"]
+      },
+      {
+        "id": 5,
+        "name": "Periyar Wildlife Sanctuary",
+        "type": "Wildlife Sanctuary",
+        "lat": 9.4700,
+        "lon": 77.2300,
+        "state": "Kerala",
+        "introduction": "Periyar Wildlife Sanctuary is a protected area in the districts of Idukki and Pathanamthitta in Kerala.",
+        "importance": "It's known for its elephant and tiger reserves, and is an important watershed for two major Kerala rivers.",
+        "protection": "Conservation efforts are vital to protect its diverse flora and fauna, including many endemic species.",
+        "images": ["/api/placeholder/800/600", "/api/placeholder/800/600", "/api/placeholder/800/600"]
+      },
+      {
+        "id": 6,
+        "name": "Bharatpur Bird Sanctuary",
+        "type": "Wildlife Sanctuary",
+        "lat": 27.1500,
+        "lon": 77.5300,
+        "state": "Rajasthan",
+        "introduction": "Also known as Keoladeo National Park, it's a famous avifauna sanctuary that hosts thousands of birds, especially during winter.",
+        "importance": "It's a critical wintering ground for Siberian migratory birds and a UNESCO World Heritage Site.",
+        "protection": "Preservation is crucial for maintaining this important habitat for resident and migratory birds.",
+        "images": ["/api/placeholder/800/600", "/api/placeholder/800/600", "/api/placeholder/800/600"]
+      },
+      {
+        "id": 7,
+        "name": "Gir Wildlife Sanctuary",
+        "type": "Wildlife Sanctuary",
+        "lat": 21.1239,
+        "lon": 70.8167,
+        "state": "Gujarat",
+        "introduction": "Gir Wildlife Sanctuary is the sole home of the Asiatic lion and is considered one of the most important protected areas in Asia.",
+        "importance": "It's critical for the conservation of Asiatic lions and supports a diverse ecosystem.",
+        "protection": "Continued protection is essential for the survival of the Asiatic lion and the sanctuary's unique biodiversity.",
+        "images": ["/api/placeholder/800/600", "/api/placeholder/800/600", "/api/placeholder/800/600"]
+      },
+      {
+        "id": 8,
+        "name": "Manas Wildlife Sanctuary",
+        "type": "Wildlife Sanctuary",
+        "lat": 26.7200,
+        "lon": 91.0000,
+        "state": "Assam",
+        "introduction": "Manas Wildlife Sanctuary is a UNESCO Natural World Heritage site, a Project Tiger reserve, and an elephant reserve.",
+        "importance": "It's known for its rare and endangered endemic wildlife such as the Assam roofed turtle and hispid hare.",
+        "protection": "Conservation is crucial to maintain its rich biodiversity and protect endangered species.",
+        "images": ["/api/placeholder/800/600", "/api/placeholder/800/600", "/api/placeholder/800/600"]
+      },
+      {
+        "id": 9,
+        "name": "Sundarbans Forest",
+        "type": "Forest",
+        "lat": 21.9497,
+        "lon": 89.1833,
+        "state": "West Bengal",
+        "introduction": "The Sundarbans forest is the world's largest mangrove forest, spanning parts of India and Bangladesh.",
+        "importance": "It's a critical habitat for the Bengal tiger and acts as a natural barrier against cyclones and tsunamis.",
+        "protection": "Preserving this unique ecosystem is vital for biodiversity conservation and climate change mitigation.",
+        "images": ["/api/placeholder/800/600", "/api/placeholder/800/600", "/api/placeholder/800/600"]
+      },
+      {
+        "id": 10,
+        "name": "Western Ghats",
+        "type": "Forest",
+        "lat": 10.0000,
+        "lon": 77.0000,
+        "state": "Multiple States",
+        "introduction": "The Western Ghats is a mountain range that runs parallel to the western coast of the Indian peninsula.",
+        "importance": "It's one of the eight hottest biodiversity hotspots in the world, with high levels of plant and animal diversity and endemism.",
+        "protection": "Conservation of this area is crucial for maintaining biodiversity and ecological services like water security.",
+        "images": ["/api/placeholder/800/600", "/api/placeholder/800/600", "/api/placeholder/800/600"]
+      },
+      {
+        "id": 11,
+        "name": "Khasi Hills",
+        "type": "Forest",
+        "lat": 25.5667,
+        "lon": 91.8833,
+        "state": "Meghalaya",
+        "introduction": "The Khasi Hills are part of the Garo-Khasi range in Meghalaya, known for their subtropical forests.",
+        "importance": "These forests are home to numerous endemic species and are known for their living root bridges.",
+        "protection": "Preserving these forests is essential for maintaining local biodiversity and cultural practices.",
+        "images": ["/api/placeholder/800/600", "/api/placeholder/800/600", "/api/placeholder/800/600"]
+      },
+      {
+        "id": 12,
+        "name": "Andaman Forests",
+        "type": "Forest",
+        "lat": 11.7401,
+        "lon": 92.6586,
+        "state": "Andaman and Nicobar Islands",
+        "introduction": "The Andaman Forests are tropical rainforests that cover the Andaman Islands in the Bay of Bengal.",
+        "importance": "These forests host unique flora and fauna, including many endemic species found nowhere else in the world.",
+        "protection": "Conservation is crucial to protect the islands' biodiversity and the habitats of endangered species.",
+        "images": ["/api/placeholder/800/600", "/api/placeholder/800/600", "/api/placeholder/800/600"]
+      }
+    ]
+  }

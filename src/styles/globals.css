@@ -67,3 +67,11 @@
       @apply bg-background text-foreground;
     }
   }
+
+  @keyframes showContent {
+    to {
+      transform: translateY(0px);
+      filter: blur(0px);
+      opacity: 1;
+    }
+  }
