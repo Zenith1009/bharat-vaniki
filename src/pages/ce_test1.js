@@ -17,56 +17,45 @@ const Sidebar = () => (
     </nav>
 );
 
-const RainDrop = ({ delay, duration, top }) => (
+const RainDrop = ({ delay, duration }) => (
     <div
-        className="absolute bg-blue-300 rounded-full"
+        className="absolute bg-gradient-to-b from-blue-300 to-blue-500 rounded-full"
         style={{
-            width: '3px',
+            width: '2px',
             height: '10px',
             left: `${Math.random() * 100}%`,
-            top: `${top}px`,
+            top: '-10px',
             animation: `fall ${duration}s linear ${delay}s infinite`
         }}
     ></div>
 );
 
 const RainEffect = () => {
-    const [documentHeight, setDocumentHeight] = useState(0);
+    const [windowSize, setWindowSize] = useState({ width: 0, height: 0 });
 
     useEffect(() => {
-        const updateHeight = () => {
-            setDocumentHeight(Math.max(
-                document.body.scrollHeight,
-                document.body.offsetHeight,
-                document.documentElement.clientHeight,
-                document.documentElement.scrollHeight,
-                document.documentElement.offsetHeight
-            ));
+        const updateSize = () => {
+            setWindowSize({ width: window.innerWidth, height: window.innerHeight });
         };
 
-        updateHeight();
-        window.addEventListener('resize', updateHeight);
-        window.addEventListener('scroll', updateHeight);
+        window.addEventListener('resize', updateSize);
+        updateSize();
 
-        return () => {
-            window.removeEventListener('resize', updateHeight);
-            window.removeEventListener('scroll', updateHeight);
-        };
+        return () => window.removeEventListener('resize', updateSize);
     }, []);
 
-    const raindrops = Array.from({ length: 500 }, (_, i) => (
+    const raindrops = Array.from({ length: 100 }, (_, i) => (
         <RainDrop
             key={i}
             delay={Math.random() * 5}
-            duration={Math.random() * 3 + 2}
-            top={Math.random() * documentHeight}
+            duration={Math.random() * 1 + 0.5}
         />
     ));
 
     return (
         <div
             className="fixed inset-0 z-10 pointer-events-none overflow-hidden"
-            style={{ height: `${documentHeight}px` }}
+            style={{ width: windowSize.width, height: windowSize.height }}
         >
             {raindrops}
         </div>
@@ -77,6 +66,27 @@ const ConservationEffortsPage = () => {
     const [isNavOpen, setIsNavOpen] = useState(false);
     const [expandedCard, setExpandedCard] = useState(null);
     const cardRefs = useRef({});
+    const [visibleCards, setVisibleCards] = useState([]);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            const visibleCardIds = conservationData.filter((project) => {
+                const card = cardRefs.current[project.id];
+                if (card) {
+                    const rect = card.getBoundingClientRect();
+                    return rect.top < window.innerHeight && rect.bottom >= 0;
+                }
+                return false;
+            }).map((project) => project.id);
+            setVisibleCards(visibleCardIds);
+        };
+
+        window.addEventListener('scroll', handleScroll);
+        handleScroll(); // Initial check
+
+        return () => window.removeEventListener('scroll', handleScroll);
+    }, []);
+
     const toggleCardExpansion = (id) => {
         setExpandedCard(expandedCard === id ? null : id);
         if (expandedCard !== id) {
@@ -92,15 +102,19 @@ const ConservationEffortsPage = () => {
     };
 
     return (
-        <div className="min-h-screen w-full relative">
+        <div className="min-h-screen w-full relative overflow-hidden">
             <style jsx global>{`
                 @keyframes fall {
-                    0% {
-                        transform: translateY(-15px);
-                    }
-                    100% {
-                        transform: translateY(100vh);
-                    }
+                    0% { transform: translateY(-10px); }
+                    100% { transform: translateY(100vh); }
+                }
+                @keyframes swipeInLeft {
+                    from { transform: translateX(-100%); opacity: 0; }
+                    to { transform: translateX(0); opacity: 1; }
+                }
+                @keyframes swipeInRight {
+                    from { transform: translateX(100%); opacity: 0; }
+                    to { transform: translateX(0); opacity: 1; }
                 }
                 .text-shadow {
                     text-shadow: 0 1px 2px rgba(0,0,0,0.8);
@@ -140,20 +154,20 @@ const ConservationEffortsPage = () => {
                     <div className="max-w-7xl mx-auto">
                         <Card className="bg-green-100 bg-opacity-60 border-green-300 mb-8 backdrop-blur-sm">
                             <CardHeader>
-                                <CardTitle className="text-2xl text-green-800">Preserving Our Forests for Future Generations</CardTitle>
+                                <CardTitle className="text-3xl text-green-800">Preserving Our Forests for Future Generations</CardTitle>
                             </CardHeader>
                             <CardContent>
-                                <p className="text-green-700 mb-4">India's forests are home to a rich biodiversity and play a crucial role in maintaining ecological balance. Our conservation efforts aim to protect these vital ecosystems and the countless species that depend on them.</p>
-                                <p className="text-green-700 mb-4">These forests serve as carbon sinks, mitigating climate change impacts and regulating local weather patterns. They are also vital for water conservation, soil protection, and air purification. Moreover, millions of people, especially indigenous communities, rely on these forests for their livelihoods and cultural heritage.</p>
-                                <p className="text-green-700 mb-4">Our conservation initiatives focus on:</p>
-                                <ul className="list-disc list-inside text-green-700 mb-4">
+                                <p className="text-green-700 mb-4 text-lg">India's forests are home to a rich biodiversity and play a crucial role in maintaining ecological balance. Our conservation efforts aim to protect these vital ecosystems and the countless species that depend on them.</p>
+                                <p className="text-green-700 mb-4 text-lg">These forests serve as carbon sinks, mitigating climate change impacts and regulating local weather patterns. They are also vital for water conservation, soil protection, and air purification. Moreover, millions of people, especially indigenous communities, rely on these forests for their livelihoods and cultural heritage.</p>
+                                <p className="text-green-700 mb-4 text-lg">Our conservation initiatives focus on:</p>
+                                <ul className="list-disc list-inside text-green-700 mb-4 text-lg">
                                     <li>Sustainable forest management practices</li>
                                     <li>Reforestation and afforestation programs</li>
                                     <li>Wildlife protection and habitat restoration</li>
                                     <li>Community-based conservation approaches</li>
                                     <li>Environmental education and awareness campaigns</li>
                                 </ul>
-                                <p className="text-green-700">By preserving our forests, we safeguard biodiversity, combat climate change, and ensure a sustainable future for generations to come. Join us in our mission to protect these irreplaceable natural treasures.</p>
+                                <p className="text-green-700 text-lg">By preserving our forests, we safeguard biodiversity, combat climate change, and ensure a sustainable future for generations to come. Join us in our mission to protect these irreplaceable natural treasures.</p>
                             </CardContent>
                         </Card>
 
@@ -161,15 +175,18 @@ const ConservationEffortsPage = () => {
                             {conservationData.map((project, index) => (
                                 <div
                                     key={project.id}
-                                    className={`flex ${expandedCard === project.id ? 'justify-center' : index % 2 === 0 ? 'justify-start' : 'justify-end'}`}
+                                    className="flex justify-center"
                                     ref={el => cardRefs.current[project.id] = el}
                                 >
                                     <Card
                                         className={`bg-white border-green-200 transition-all duration-300 hover:shadow-xl group overflow-hidden
-                                            ${expandedCard === project.id
-                                                ? 'w-full h-[550px]'
-                                                : 'w-full sm:w-5/6 md:w-3/4 lg:w-2/3 xl:w-1/2 h-64 hover:scale-[1.02]'
-                                            }`}
+                                            ${expandedCard === project.id ? 'w-full h-[850px]' : 'w-full sm:w-5/6 md:w-3/4 lg:w-2/3 xl:w-1/2 h-72 hover:scale-[1.02]'}
+                                            ${visibleCards.includes(project.id) 
+                                                ? index % 2 === 0 
+                                                    ? 'animate-[swipeInLeft_0.5s_ease-out]' 
+                                                    : 'animate-[swipeInRight_0.5s_ease-out]' 
+                                                : 'opacity-0'}
+                                            ${index % 2 === 0 ? 'mr-auto' : 'ml-auto'}`}
                                     >
                                         <div
                                             className={`bg-cover bg-center transition-all duration-300 h-full`}
@@ -181,14 +198,14 @@ const ConservationEffortsPage = () => {
                                                     : 'bg-black bg-opacity-50'
                                                 }`}>
                                                 <div className={`p-4 overflow-y-auto ${expandedCard === project.id ? 'mask-image' : ''}`}>
-                                                    <CardTitle className="text-xl text-white mb-2 font-bold">{project.name}</CardTitle>
-                                                    <p className="text-white mb-4 text-shadow">
+                                                    <CardTitle className="text-3xl text-white mb-2 font-bold">{project.name}</CardTitle>
+                                                    <p className="text-white text-xl mb-4 text-shadow">
                                                         {project.description}
                                                     </p>
                                                     {expandedCard === project.id && (
                                                         <div className="mt-4">
-                                                            <h3 className="text-lg font-semibold mb-2 text-white text-shadow">Detailed Information</h3>
-                                                            <p className="text-white whitespace-pre-line text-shadow">{project.extraContent}</p>
+                                                            <h3 className="text-2xl font-semibold mb-2 text-white text-shadow">Detailed Information</h3>
+                                                            <p className="text-white text-xl whitespace-pre-line text-shadow">{project.extraContent}</p>
                                                         </div>
                                                     )}
                                                 </div>
@@ -212,11 +229,11 @@ const ConservationEffortsPage = () => {
                                 <CardTitle className="text-2xl text-green-800">Get Involved</CardTitle>
                             </CardHeader>
                             <CardContent>
-                                <p className="text-green-700">Your support can make a difference in our conservation efforts. Whether through volunteering, donations, or spreading awareness, every action counts in protecting our precious forests.</p>
+                                <p className="text-green-700 text-lg">Your support can make a difference in our conservation efforts. Whether through volunteering, donations, or spreading awareness, every action counts in protecting our precious forests.</p>
                                 <div className="flex flex-col sm:flex-row gap-4 mt-4">
                                     <Button className="bg-green-600 hover:bg-green-700">
                                         <Link href="https://www.forrest-india.org/donate/#:~:text=FORREST%20is%20committed%20to%20conserve,blissful%20place%20for%20all%20beings."
-                                            className="text-lg hover:underline transition-colors duration-200 hover:text-green-200"
+                                            className="text-lg hover:no-underline transition-colors duration-200 hover:text-green-200 "
                                             target="_blank"
                                             rel="noopener noreferrer">
                                             Support our cause
@@ -224,7 +241,7 @@ const ConservationEffortsPage = () => {
                                     </Button>
                                     <Button className="bg-green-600 hover:bg-green-700">
                                         <Link href="https://indiaenvironment.org/volunteer/"
-                                            className="text-lg hover:underline transition-colors duration-200 hover:text-green-200"
+                                            className="text-lg hover:no-underline transition-colors duration-200 hover:text-green-200"
                                             target="_blank"
                                             rel="noopener noreferrer">
                                             Volunteer
