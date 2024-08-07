@@ -136,8 +136,8 @@ export default function Hero() {
         data-distance="0"
         data-speed="0.05"
       >
-        <h2 className="font-thin text-[6.5rem] leading-[0.88]">forest</h2>
-        <h1 className="font-extrabold text-[8rem] leading-[0.88]">galaxy</h1>
+        <h2 className="font-thin text-[6.5rem] leading-[1.5]">Bharat</h2>
+        <h1 className="font-extrabold text-[8rem] leading-[1]">वानिकी</h1>
       </div>
 
       <Image

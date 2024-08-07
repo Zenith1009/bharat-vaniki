@@ -3,30 +3,31 @@ import Image from "next/image";
 const Credits = () => {
   return (
     <div>
-        <section className="w-full bg-black relative">
-        <div class="shadow absolute bottom-[100%] w-full h-[300px] left-0 z-50 bg-gradient-to-b from-transparent to-black"></div>
+      <section className="w-full bg-black relative">
+        <div className="shadow absolute bottom-[100%] w-full h-[150px] md:h-[300px] left-0 z-50 bg-gradient-to-b from-transparent to-black"></div>
 
-        <div class="container p-12 grid grid-cols-2 items-center justify-center min-h-[100vh]">
-          <div class="content opacity text-white m-8 transform -translate-y-12">
-            <h3 class="title font-bold text-4xl mb-4 pb-2 relative">
-              Credits
-              <div class="border absolute h-[3px] bg-white bottom-0 left-0"></div>
+        <div className="container px-4 py-8 md:p-12 flex flex-col md:flex-row items-center justify-center min-h-screen">
+          <div className="content text-white mb-8 md:mb-0 md:w-1/2 transform -translate-y-6 md:-translate-y-12">
+            <h3 className="title font-bold text-3xl md:text-4xl mb-4 pb-2 relative inline-block">
+              Welcome
+              <div className="border absolute h-[3px] bg-white bottom-0 left-0 right-0"></div>
             </h3>
-            <p class="text-2xl">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque
-              officiis quos expedita ipsa, a quidem inventore voluptates debitis
-              accusamus tenetur qui et voluptas dicta, culpa earum, doloribus
-              odio consectetur consequuntur soluta quasi nobis! Deserunt
-              voluptatum reiciendis iure expedita sequi quisquam laboriosam
-              temporibus exercitationem.
+            <p className="text-lg md:text-2xl mt-4">
+            We are delighted to have you explore the rich biodiversity and conservation efforts showcased here. Enjoy your journey through the wonders of India's forests and wildlife!
             </p>
           </div>
 
-          <div class="imgContainer opacity m-8 transform translate-y-12">
-            <Image src="/img/background.png" width={800} height={600} />
+          <div className="imgContainer md:w-1/2 transform translate-y-6 md:translate-y-12">
+            <Image 
+              src="/image/bg.jpg" 
+              width={800} 
+              height={600} 
+              layout="responsive"
+              alt="Credits background"
+            />
           </div>
         </div>
-        <div class="borderLine relative w-full h-[3px] bg-white bottom-0 left-0"></div>
+        <div className="borderLine relative w-full h-[3px] bg-white bottom-0 left-0"></div>
       </section>
     </div>
   )
