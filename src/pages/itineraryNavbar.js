@@ -41,11 +41,11 @@ const ItineraryNavbar = () => {
                     </div>
                 </Link>
                 
-                <div className="flex items-center space-x-4">
+                <div className="flex items-center space-x-4 z-50">
                     <div className="relative">
                         <Button
                             variant="ghost"
-                            className="text-white hover:text-black text-xl flex items-center"
+                            className="text-white hover:text-black text-xl flex items-center "
                         >
                             <span 
                                 className="relative"

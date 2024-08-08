@@ -8,6 +8,7 @@ import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import Link from 'next/link';
+import ItineraryNavbar from "./itineraryNavbar";
 
 const Sidebar = () => (
   <nav className="flex flex-col gap-4 mt-8">
@@ -122,24 +123,7 @@ const CareerPortalPage = () => {
         <div className="absolute inset-0 bg-black opacity-50 z-10"></div>
         <div className="relative z-20">
           <div className="sunray-container absolute inset-0 z-10 pointer-events-none"></div>
-          <header className="bg-green-800 text-white p-2 relative z-20">
-            <div className="container mx-auto flex items-center justify-between">
-              <Sheet open={isNavOpen} onOpenChange={setIsNavOpen}>
-                <SheetTrigger asChild>
-                  <Button variant="ghost" size="icon" className="text-white hover:bg-green-700">
-                    <Menu className="h-6 w-6" />
-                  </Button>
-                </SheetTrigger>
-                <SheetContent side="left" className="bg-green-700 text-white">
-                  <Sidebar />
-                </SheetContent>
-              </Sheet>
-              <div className="text-center flex-grow">
-                <h1 className="text-2xl font-bold">Career Portal</h1>
-                <p className="text-sm">Forestry Professional Opportunities</p>
-              </div>
-            </div>
-          </header>
+          <ItineraryNavbar />
 
           <main className="flex-grow p-4 relative z-20">
             <div className="max-w-4xl mx-auto">

@@ -1,17 +1,5 @@
 {
   "applications": [
-    {
-      "id": "b668a332-119f-43db-bfaa-c62b71130712",
-      "jobId": 1,
-      "fullName": "AA",
-      "gender": "other",
-      "dob": "2000-01-07",
-      "education": "MAA KI AANKH",
-      "phone": "1234567890",
-      "email": "random@gmail.com",
-      "experience": "GHAAS KAATNA ",
-      "reason": "NAANI NE BOLA",
-      "timestamp": "2024-08-07T15:38:03.320Z"
-    }
+    
   ]
 }
