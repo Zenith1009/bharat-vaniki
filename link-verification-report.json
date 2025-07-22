@@ -1,0 +1,546 @@
+{
+  "summary": {
+    "total": 61,
+    "passed": 35,
+    "failed": 26,
+    "warnings": 0,
+    "successRate": "57.38%"
+  },
+  "timestamp": "2025-07-21T22:36:53.573Z",
+  "details": {
+    "apis": [
+      {
+        "url": "https://indian-forests-ecosystem.vercel.app/api/health",
+        "type": "api",
+        "status": "failed",
+        "statusCode": 404,
+        "statusMessage": "Not Found",
+        "redirectCount": 0,
+        "timestamp": "2025-07-21T22:36:12.642Z"
+      },
+      {
+        "url": "https://indian-forests-ecosystem.vercel.app/api/quiz/questions",
+        "type": "api",
+        "status": "failed",
+        "statusCode": 404,
+        "statusMessage": "Not Found",
+        "redirectCount": 0,
+        "timestamp": "2025-07-21T22:36:12.841Z"
+      },
+      {
+        "url": "https://indian-forests-ecosystem.vercel.app/api/quiz/categories",
+        "type": "api",
+        "status": "failed",
+        "statusCode": 404,
+        "statusMessage": "Not Found",
+        "redirectCount": 0,
+        "timestamp": "2025-07-21T22:36:12.938Z"
+      },
+      {
+        "url": "https://indian-forests-ecosystem.vercel.app/api/insights/stats",
+        "type": "api",
+        "status": "failed",
+        "statusCode": 404,
+        "statusMessage": "Not Found",
+        "redirectCount": 0,
+        "timestamp": "2025-07-21T22:36:13.042Z"
+      },
+      {
+        "url": "https://indian-forests-ecosystem.vercel.app/api/donations/causes",
+        "type": "api",
+        "status": "failed",
+        "statusCode": 404,
+        "statusMessage": "Not Found",
+        "redirectCount": 0,
+        "timestamp": "2025-07-21T22:36:13.199Z"
+      },
+      {
+        "url": "https://indian-forests-ecosystem.vercel.app/api/donations/organizations",
+        "type": "api",
+        "status": "failed",
+        "statusCode": 404,
+        "statusMessage": "Not Found",
+        "redirectCount": 0,
+        "timestamp": "2025-07-21T22:36:13.370Z"
+      },
+      {
+        "url": "https://indian-forests-ecosystem.vercel.app/api/contact",
+        "type": "api",
+        "status": "failed",
+        "statusCode": 404,
+        "statusMessage": "Not Found",
+        "redirectCount": 0,
+        "timestamp": "2025-07-21T22:36:13.472Z"
+      },
+      {
+        "url": "https://indian-forests-ecosystem.vercel.app/api/newsletter/subscribe",
+        "type": "api",
+        "status": "failed",
+        "statusCode": 404,
+        "statusMessage": "Not Found",
+        "redirectCount": 0,
+        "timestamp": "2025-07-21T22:36:14.002Z"
+      },
+      {
+        "url": "https://indian-forests-ecosystem.vercel.app/api/sitemap",
+        "type": "api",
+        "status": "failed",
+        "statusCode": 404,
+        "statusMessage": "Not Found",
+        "redirectCount": 0,
+        "timestamp": "2025-07-21T22:36:14.132Z"
+      },
+      {
+        "url": "https://indian-forests-ecosystem.vercel.app/api/robots",
+        "type": "api",
+        "status": "failed",
+        "statusCode": 404,
+        "statusMessage": "Not Found",
+        "redirectCount": 0,
+        "timestamp": "2025-07-21T22:36:14.362Z"
+      }
+    ],
+    "externalLinks": [
+      {
+        "url": "https://www.wwfindia.org/donate/",
+        "type": "external",
+        "status": "success",
+        "statusCode": 200,
+        "statusMessage": "OK",
+        "redirectCount": 1,
+        "timestamp": "2025-07-21T22:36:16.800Z"
+      },
+      {
+        "url": "https://www.wwfindia.org/",
+        "type": "external",
+        "status": "success",
+        "statusCode": 200,
+        "statusMessage": "",
+        "redirectCount": 0,
+        "timestamp": "2025-07-21T22:36:17.566Z"
+      },
+      {
+        "url": "https://www.wti.org.in/donate/",
+        "type": "external",
+        "status": "failed",
+        "statusCode": 404,
+        "statusMessage": "Not Found",
+        "redirectCount": 0,
+        "timestamp": "2025-07-21T22:36:18.962Z"
+      },
+      {
+        "url": "https://www.wti.org.in/",
+        "type": "external",
+        "status": "success",
+        "statusCode": 200,
+        "statusMessage": "OK",
+        "redirectCount": 0,
+        "timestamp": "2025-07-21T22:36:20.414Z"
+      },
+      {
+        "url": "https://www.fauna-flora.org/donate/",
+        "type": "external",
+        "status": "failed",
+        "statusCode": 403,
+        "statusMessage": "Forbidden",
+        "redirectCount": 0,
+        "timestamp": "2025-07-21T22:36:20.779Z"
+      },
+      {
+        "url": "https://www.fauna-flora.org/",
+        "type": "external",
+        "status": "success",
+        "statusCode": 200,
+        "statusMessage": "OK",
+        "redirectCount": 0,
+        "timestamp": "2025-07-21T22:36:21.630Z"
+      },
+      {
+        "url": "https://www.greenpeace.org/india/en/donate/",
+        "type": "external",
+        "status": "success",
+        "statusCode": 200,
+        "statusMessage": "OK",
+        "redirectCount": 1,
+        "timestamp": "2025-07-21T22:36:22.401Z"
+      },
+      {
+        "url": "https://www.greenpeace.org/india/",
+        "type": "external",
+        "status": "success",
+        "statusCode": 200,
+        "statusMessage": "OK",
+        "redirectCount": 1,
+        "timestamp": "2025-07-21T22:36:23.200Z"
+      },
+      {
+        "url": "https://cauvery.org/donate",
+        "type": "external",
+        "status": "failed",
+        "statusCode": 404,
+        "statusMessage": "Not Found",
+        "redirectCount": 2,
+        "timestamp": "2025-07-21T22:36:27.180Z"
+      },
+      {
+        "url": "https://cauvery.org/",
+        "type": "external",
+        "status": "success",
+        "statusCode": 200,
+        "statusMessage": "OK",
+        "redirectCount": 2,
+        "timestamp": "2025-07-21T22:36:30.586Z"
+      },
+      {
+        "url": "https://www.facebook.com/WWFIndia",
+        "type": "external",
+        "status": "success",
+        "statusCode": 200,
+        "statusMessage": "OK",
+        "redirectCount": 1,
+        "timestamp": "2025-07-21T22:36:32.566Z"
+      },
+      {
+        "url": "https://twitter.com/WWFIndia",
+        "type": "external",
+        "status": "failed",
+        "statusCode": 403,
+        "statusMessage": "Forbidden",
+        "redirectCount": 0,
+        "timestamp": "2025-07-21T22:36:33.544Z"
+      },
+      {
+        "url": "https://www.instagram.com/wwfindia/",
+        "type": "external",
+        "status": "success",
+        "statusCode": 200,
+        "statusMessage": "OK",
+        "redirectCount": 0,
+        "timestamp": "2025-07-21T22:36:34.542Z"
+      },
+      {
+        "url": "https://www.youtube.com/user/WWFIndia",
+        "type": "external",
+        "status": "success",
+        "statusCode": 200,
+        "statusMessage": "OK",
+        "redirectCount": 0,
+        "timestamp": "2025-07-21T22:36:35.067Z"
+      },
+      {
+        "url": "https://www.facebook.com/WildlifeTrustofIndia",
+        "type": "external",
+        "status": "success",
+        "statusCode": 200,
+        "statusMessage": "OK",
+        "redirectCount": 1,
+        "timestamp": "2025-07-21T22:36:36.010Z"
+      },
+      {
+        "url": "https://twitter.com/wti_org_in",
+        "type": "external",
+        "status": "failed",
+        "statusCode": 403,
+        "statusMessage": "Forbidden",
+        "redirectCount": 0,
+        "timestamp": "2025-07-21T22:36:36.445Z"
+      },
+      {
+        "url": "https://www.instagram.com/wildlifetrustofindia/",
+        "type": "external",
+        "status": "success",
+        "statusCode": 200,
+        "statusMessage": "OK",
+        "redirectCount": 0,
+        "timestamp": "2025-07-21T22:36:36.834Z"
+      },
+      {
+        "url": "https://www.youtube.com/user/WildlifeTrustIndia",
+        "type": "external",
+        "status": "failed",
+        "statusCode": 404,
+        "statusMessage": "Not Found",
+        "redirectCount": 0,
+        "timestamp": "2025-07-21T22:36:37.189Z"
+      },
+      {
+        "url": "https://www.facebook.com/faunaandflorainternational",
+        "type": "external",
+        "status": "success",
+        "statusCode": 200,
+        "statusMessage": "OK",
+        "redirectCount": 0,
+        "timestamp": "2025-07-21T22:36:37.695Z"
+      },
+      {
+        "url": "https://twitter.com/fauna_flora",
+        "type": "external",
+        "status": "failed",
+        "statusCode": 403,
+        "statusMessage": "Forbidden",
+        "redirectCount": 0,
+        "timestamp": "2025-07-21T22:36:38.227Z"
+      },
+      {
+        "url": "https://www.instagram.com/faunafloraint/",
+        "type": "external",
+        "status": "success",
+        "statusCode": 200,
+        "statusMessage": "OK",
+        "redirectCount": 0,
+        "timestamp": "2025-07-21T22:36:38.615Z"
+      },
+      {
+        "url": "https://www.youtube.com/user/FaunaFloraInt",
+        "type": "external",
+        "status": "failed",
+        "statusCode": 404,
+        "statusMessage": "Not Found",
+        "redirectCount": 0,
+        "timestamp": "2025-07-21T22:36:38.950Z"
+      },
+      {
+        "url": "https://www.facebook.com/GreenpeaceIndia",
+        "type": "external",
+        "status": "success",
+        "statusCode": 200,
+        "statusMessage": "OK",
+        "redirectCount": 1,
+        "timestamp": "2025-07-21T22:36:39.941Z"
+      },
+      {
+        "url": "https://twitter.com/GreenpeaceIndia",
+        "type": "external",
+        "status": "failed",
+        "statusCode": 403,
+        "statusMessage": "Forbidden",
+        "redirectCount": 0,
+        "timestamp": "2025-07-21T22:36:40.459Z"
+      },
+      {
+        "url": "https://www.instagram.com/greenpeaceindia/",
+        "type": "external",
+        "status": "success",
+        "statusCode": 200,
+        "statusMessage": "OK",
+        "redirectCount": 0,
+        "timestamp": "2025-07-21T22:36:40.841Z"
+      },
+      {
+        "url": "https://www.youtube.com/user/GreenpeaceIndia",
+        "type": "external",
+        "status": "success",
+        "statusCode": 200,
+        "statusMessage": "OK",
+        "redirectCount": 0,
+        "timestamp": "2025-07-21T22:36:41.420Z"
+      },
+      {
+        "url": "https://isha.sadhguru.org/",
+        "type": "external",
+        "status": "success",
+        "statusCode": 200,
+        "statusMessage": "OK",
+        "redirectCount": 1,
+        "timestamp": "2025-07-21T22:36:42.024Z"
+      },
+      {
+        "url": "https://www.facebook.com/sadhguru",
+        "type": "external",
+        "status": "success",
+        "statusCode": 200,
+        "statusMessage": "OK",
+        "redirectCount": 0,
+        "timestamp": "2025-07-21T22:36:42.370Z"
+      },
+      {
+        "url": "https://twitter.com/SadhguruJV",
+        "type": "external",
+        "status": "failed",
+        "statusCode": 403,
+        "statusMessage": "Forbidden",
+        "redirectCount": 0,
+        "timestamp": "2025-07-21T22:36:42.991Z"
+      },
+      {
+        "url": "https://www.instagram.com/sadhguru/",
+        "type": "external",
+        "status": "success",
+        "statusCode": 200,
+        "statusMessage": "OK",
+        "redirectCount": 0,
+        "timestamp": "2025-07-21T22:36:43.675Z"
+      },
+      {
+        "url": "https://www.youtube.com/user/sadhguru",
+        "type": "external",
+        "status": "success",
+        "statusCode": 200,
+        "statusMessage": "OK",
+        "redirectCount": 0,
+        "timestamp": "2025-07-21T22:36:44.298Z"
+      },
+      {
+        "url": "http://www.w3.org/2000/svg",
+        "type": "external",
+        "status": "success",
+        "statusCode": 200,
+        "statusMessage": "OK",
+        "redirectCount": 1,
+        "timestamp": "2025-07-21T22:36:44.567Z"
+      },
+      {
+        "url": "https://img.shields.io/badge/Next.js-14-black?style=for-the-badge&logo=next.js&logoColor=white)",
+        "type": "external",
+        "status": "success",
+        "statusCode": 200,
+        "statusMessage": "OK",
+        "redirectCount": 0,
+        "timestamp": "2025-07-21T22:36:44.932Z"
+      },
+      {
+        "url": "https://img.shields.io/badge/React-18-61DAFB?style=for-the-badge&logo=react&logoColor=black)",
+        "type": "external",
+        "status": "success",
+        "statusCode": 200,
+        "statusMessage": "OK",
+        "redirectCount": 0,
+        "timestamp": "2025-07-21T22:36:45.255Z"
+      },
+      {
+        "url": "https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)",
+        "type": "external",
+        "status": "success",
+        "statusCode": 200,
+        "statusMessage": "OK",
+        "redirectCount": 0,
+        "timestamp": "2025-07-21T22:36:45.761Z"
+      },
+      {
+        "url": "https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white)",
+        "type": "external",
+        "status": "success",
+        "statusCode": 200,
+        "statusMessage": "OK",
+        "redirectCount": 0,
+        "timestamp": "2025-07-21T22:36:46.098Z"
+      },
+      {
+        "url": "https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)",
+        "type": "external",
+        "status": "success",
+        "statusCode": 200,
+        "statusMessage": "OK",
+        "redirectCount": 0,
+        "timestamp": "2025-07-21T22:36:46.401Z"
+      },
+      {
+        "url": "https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)",
+        "type": "external",
+        "status": "success",
+        "statusCode": 200,
+        "statusMessage": "OK",
+        "redirectCount": 0,
+        "timestamp": "2025-07-21T22:36:46.969Z"
+      },
+      {
+        "url": "https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)",
+        "type": "external",
+        "status": "success",
+        "statusCode": 200,
+        "statusMessage": "OK",
+        "redirectCount": 0,
+        "timestamp": "2025-07-21T22:36:47.394Z"
+      },
+      {
+        "url": "https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)",
+        "type": "external",
+        "status": "success",
+        "statusCode": 200,
+        "statusMessage": "OK",
+        "redirectCount": 0,
+        "timestamp": "2025-07-21T22:36:47.952Z"
+      },
+      {
+        "url": "https://img.shields.io/badge/GSAP-88CE02?style=for-the-badge&logo=greensock&logoColor=white)",
+        "type": "external",
+        "status": "success",
+        "statusCode": 200,
+        "statusMessage": "OK",
+        "redirectCount": 0,
+        "timestamp": "2025-07-21T22:36:48.511Z"
+      },
+      {
+        "url": "https://img.shields.io/badge/Framer_Motion-0055FF?style=for-the-badge&logo=framer&logoColor=white)",
+        "type": "external",
+        "status": "success",
+        "statusCode": 200,
+        "statusMessage": "OK",
+        "redirectCount": 0,
+        "timestamp": "2025-07-21T22:36:49.192Z"
+      },
+      {
+        "url": "https://img.shields.io/badge/Web_Wonders_",
+        "type": "external",
+        "status": "failed",
+        "statusCode": 404,
+        "statusMessage": "Not Found",
+        "redirectCount": 0,
+        "timestamp": "2025-07-21T22:36:49.874Z"
+      },
+      {
+        "url": "https://img.shields.io/badge/Contributors-4-green?style=for-the-badge&logo=github&logoColor=white)",
+        "type": "external",
+        "status": "success",
+        "statusCode": 200,
+        "statusMessage": "OK",
+        "redirectCount": 0,
+        "timestamp": "2025-07-21T22:36:50.189Z"
+      },
+      {
+        "url": "https://github.com/ang-dutta)**",
+        "type": "external",
+        "status": "failed",
+        "statusCode": 404,
+        "statusMessage": "Not Found",
+        "redirectCount": 0,
+        "timestamp": "2025-07-21T22:36:51.162Z"
+      },
+      {
+        "url": "https://github.com/Zenith1009)**",
+        "type": "external",
+        "status": "failed",
+        "statusCode": 404,
+        "statusMessage": "Not Found",
+        "redirectCount": 0,
+        "timestamp": "2025-07-21T22:36:51.550Z"
+      },
+      {
+        "url": "https://github.com/RDisCoding)**",
+        "type": "external",
+        "status": "failed",
+        "statusCode": 404,
+        "statusMessage": "Not Found",
+        "redirectCount": 0,
+        "timestamp": "2025-07-21T22:36:51.940Z"
+      },
+      {
+        "url": "https://github.com/Smitvd22)**",
+        "type": "external",
+        "status": "failed",
+        "statusCode": 404,
+        "statusMessage": "Not Found",
+        "redirectCount": 0,
+        "timestamp": "2025-07-21T22:36:52.341Z"
+      },
+      {
+        "url": "http://localhost:3000](http://localhost:3000)",
+        "type": "external",
+        "status": "error",
+        "error": "Invalid URL",
+        "timestamp": "2025-07-21T22:36:52.342Z"
+      }
+    ],
+    "images": []
+  }
+}

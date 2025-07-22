@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
-import { Menu, Park, TreePine, Trees } from "lucide-react";
+import Head from 'next/head';
+import { Menu, TreePine, Trees } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import {
@@ -9,11 +10,11 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+import { motion } from 'framer-motion';
 import dynamic from "next/dynamic";
 import "leaflet/dist/leaflet.css";
 import Image from "next/image";
 import forestDataJson from "@/data/indianForests.json";
-import Navbar from "./navbar";
 
 const MapContainer = dynamic(
   () => import("react-leaflet").then((mod) => mod.MapContainer),
@@ -40,7 +41,7 @@ const ForestTypeMarker = ({ position, children, type }) => {
   };
 
   const IconComponent = {
-    "National Park": Park,
+    "National Park": Trees,
     "Wildlife Sanctuary": TreePine,
     "Forest": Trees,
   };
@@ -81,8 +82,8 @@ const ImageGallery = ({ images }) => {
       <Image
         src={images[currentImageIndex]}
         alt={`Forest image ${currentImageIndex + 1}`}
-        layout="fill"
-        objectFit="cover"
+        fill
+        style={{objectFit: 'cover'}}
         className="rounded-t-lg"
       />
       <button
@@ -101,7 +102,7 @@ const ImageGallery = ({ images }) => {
   );
 };
 
-const HomePage = () => {
+const DestinationsPage = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
   const [isMounted, setIsMounted] = useState(false);
 
@@ -148,12 +149,41 @@ const HomePage = () => {
   };
 
   return (
-    <div className="h-screen flex flex-col">
-      <Navbar />
+    <>
+      <Head>
+        <title>Forest Destinations - Explore Indian National Parks & Wildlife Sanctuaries</title>
+        <meta 
+          name="description" 
+          content="Discover India's most beautiful forest destinations, national parks, and wildlife sanctuaries. Interactive map with detailed information about each location." 
+        />
+        <meta name="keywords" content="Indian national parks, wildlife sanctuaries, forest destinations, nature tourism, biodiversity hotspots" />
+        <meta property="og:title" content="Forest Destinations - Explore Indian National Parks & Wildlife Sanctuaries" />
+        <meta property="og:description" content="Interactive map of India's forest destinations with detailed information about national parks and wildlife sanctuaries." />
+        <meta property="og:type" content="website" />
+        <link rel="canonical" href="/destinations" />
+      </Head>
 
-      <main className="flex-grow">
-        <div className="h-full relative">
-          {isMounted && (
+      <div className="h-screen flex flex-col">
+        {/* Hero Section */}
+        <motion.section 
+          className="relative py-8 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-green-600 to-blue-600 text-white"
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+        >
+          <div className="max-w-4xl mx-auto text-center">
+            <h1 className="text-3xl md:text-4xl font-bold mb-4">
+              Explore Forest Destinations
+            </h1>
+            <p className="text-lg md:text-xl opacity-90">
+              Discover India's national parks, wildlife sanctuaries, and forest reserves on our interactive map
+            </p>
+          </div>
+        </motion.section>
+
+        <main className="flex-grow">
+          <div className="h-full relative">
+            {isMounted && (
             <MapContainer
               center={[20.5937, 78.9629]}
               zoom={5}
@@ -205,10 +235,11 @@ const HomePage = () => {
               })}
             </MapContainer>
           )}
-        </div>
-      </main>
-    </div>
+          </div>
+        </main>
+      </div>
+    </>
   );
 };
 
-export default HomePage;
+export default DestinationsPage;

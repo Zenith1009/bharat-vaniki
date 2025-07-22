@@ -37,7 +37,7 @@ const Carousel = ({ items }) => {
       <div className={styles.list}>
         {items.map((item, index) => (
           <div key={index} className={`${styles.item} ${index === currentIndex ? styles.active : ''}`}>
-            <Image src={item.image} alt={item.title} layout="fill" objectFit="cover" />
+            <Image src={item.image} alt={item.title} fill style={{objectFit: 'cover'}} />
             <div className={styles.content}>
               <div className={styles.author}>{item.author}</div>
               <div className={styles.title}>{item.title}</div>

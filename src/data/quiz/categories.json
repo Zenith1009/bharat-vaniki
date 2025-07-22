@@ -1,0 +1,87 @@
+{
+  "categories": [
+    {
+      "id": "biodiversity",
+      "name": "Biodiversity",
+      "description": "Questions about India's rich plant and animal life, endemic species, and wildlife conservation",
+      "icon": "🦋",
+      "color": "#16a34a",
+      "topics": [
+        "National Parks and Wildlife Sanctuaries",
+        "Endemic Species",
+        "Endangered Animals",
+        "Bird Sanctuaries",
+        "Marine Life",
+        "Flora and Fauna"
+      ]
+    },
+    {
+      "id": "conservation",
+      "name": "Conservation",
+      "description": "Questions about forest conservation efforts, policies, and environmental protection initiatives",
+      "icon": "🌱",
+      "color": "#15803d",
+      "topics": [
+        "Conservation Projects",
+        "Forest Policies",
+        "Environmental Laws",
+        "Sustainable Practices",
+        "Climate Change Mitigation",
+        "Restoration Efforts"
+      ]
+    },
+    {
+      "id": "ecology",
+      "name": "Ecology",
+      "description": "Questions about forest ecosystems, ecological processes, and environmental science",
+      "icon": "🌿",
+      "color": "#166534",
+      "topics": [
+        "Forest Types",
+        "Ecosystem Services",
+        "Food Chains and Webs",
+        "Nutrient Cycles",
+        "Symbiotic Relationships",
+        "Ecological Processes"
+      ]
+    },
+    {
+      "id": "general",
+      "name": "General Knowledge",
+      "description": "General questions about Indian forests, geography, and cultural significance",
+      "icon": "🌳",
+      "color": "#14532d",
+      "topics": [
+        "Forest Geography",
+        "Cultural Significance",
+        "Traditional Uses",
+        "Forest Products",
+        "Historical Facts",
+        "Regional Specialties"
+      ]
+    }
+  ],
+  "difficulties": [
+    {
+      "id": "easy",
+      "name": "Easy",
+      "description": "Basic questions suitable for beginners",
+      "color": "#22c55e",
+      "points": 10
+    },
+    {
+      "id": "medium",
+      "name": "Medium",
+      "description": "Intermediate questions requiring some knowledge",
+      "color": "#eab308",
+      "points": 20
+    },
+    {
+      "id": "hard",
+      "name": "Hard",
+      "description": "Advanced questions for forest enthusiasts",
+      "color": "#ef4444",
+      "points": 30
+    }
+  ]
+}

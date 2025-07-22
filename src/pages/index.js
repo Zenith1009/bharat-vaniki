@@ -1,27 +1,13 @@
-import { useEffect } from "react";
-import { initParallax } from "./parallax";
-import { parallaxScroll } from "./parallaxScroll";
 import Hero from "./Hero";
-import Cards from "./Cards";
-import Footer from "./Footer";
-import Credits from "./Credits";
+import EnhancedSections from "../components/sections/EnhancedSections";
 
-export default function random() {
-  useEffect(() => {
-    initParallax();
-  }, []);
-
-  useEffect(() => {
-    parallaxScroll();
-  }, []);
+export default function HomePage() {
+  // Parallax is now handled by the Hero component using the useParallax hook
 
   return (
     <div className="overflow-x-clip">
       <Hero />
-      <Credits />
-      <Cards />
-      <Footer />
-      
+      <EnhancedSections />
     </div>
   );
 }

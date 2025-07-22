@@ -1,0 +1,312 @@
+[
+  {
+    "id": "wwf-india",
+    "name": "WWF India",
+    "fullName": "World Wide Fund for Nature - India",
+    "logo": "/images/organizations/wwf-india-logo.png",
+    "established": 1969,
+    "headquarters": "New Delhi, India",
+    "type": "International NGO",
+    "registration": "Registered under Societies Registration Act, 1860",
+    "mission": "To stop the degradation of the planet's natural environment and to build a future in which humans live in harmony with nature.",
+    "focusAreas": [
+      "Forest Conservation",
+      "Wildlife Protection",
+      "Climate Change",
+      "Freshwater Conservation",
+      "Marine Conservation"
+    ],
+    "keyPrograms": [
+      {
+        "name": "Tiger Conservation",
+        "description": "Protecting tiger habitats and corridors across India",
+        "impact": "Tiger population increased by 30% in key reserves"
+      },
+      {
+        "name": "Elephant Conservation",
+        "description": "Reducing human-elephant conflict through corridor creation",
+        "impact": "15 elephant corridors established"
+      },
+      {
+        "name": "Forest Restoration",
+        "description": "Community-based forest restoration programs",
+        "impact": "500,000 trees planted across degraded landscapes"
+      }
+    ],
+    "financials": {
+      "totalRevenue": "₹85 crores (2022-23)",
+      "programExpenses": "85%",
+      "fundraisingExpenses": "10%",
+      "adminExpenses": "5%",
+      "rating": "4/4 stars (Charity Navigator equivalent)"
+    },
+    "certifications": [
+      "FCRA Registration",
+      "12A and 80G Tax Exemption",
+      "ISO 9001:2015 Certified"
+    ],
+    "donationUrl": "https://www.wwfindia.org/donate/",
+    "contact": {
+      "website": "https://www.wwfindia.org/",
+      "email": "info@wwfindia.net",
+      "phone": "+91-11-4150-4814",
+      "address": "172-B, Lodi Estate, New Delhi - 110003"
+    },
+    "socialMedia": {
+      "facebook": "https://www.facebook.com/WWFIndia",
+      "twitter": "https://twitter.com/WWFIndia",
+      "instagram": "https://www.instagram.com/wwfindia/",
+      "youtube": "https://www.youtube.com/user/WWFIndia"
+    },
+    "verified": true,
+    "trustScore": 95
+  },
+  {
+    "id": "wti",
+    "name": "Wildlife Trust of India",
+    "fullName": "Wildlife Trust of India",
+    "logo": "/images/organizations/wti-logo.png",
+    "established": 1998,
+    "headquarters": "New Delhi, India",
+    "type": "Indian NGO",
+    "registration": "Registered under Societies Registration Act, 1860",
+    "mission": "To conserve wildlife and its habitat and to work for the welfare of individual wild animals.",
+    "focusAreas": [
+      "Wildlife Rescue & Rehabilitation",
+      "Human-Wildlife Conflict Mitigation",
+      "Habitat Conservation",
+      "Wildlife Crime Prevention",
+      "Community Conservation"
+    ],
+    "keyPrograms": [
+      {
+        "name": "Right of Passage",
+        "description": "Creating safe corridors for elephant movement",
+        "impact": "15 elephant corridors secured across India"
+      },
+      {
+        "name": "Wildlife SOS",
+        "description": "Emergency rescue and rehabilitation of wildlife",
+        "impact": "10,000+ animals rescued and rehabilitated"
+      },
+      {
+        "name": "Conservation Breeding",
+        "description": "Breeding programs for endangered species",
+        "impact": "Successful breeding of gharials, turtles, and other species"
+      }
+    ],
+    "financials": {
+      "totalRevenue": "₹45 crores (2022-23)",
+      "programExpenses": "88%",
+      "fundraisingExpenses": "8%",
+      "adminExpenses": "4%",
+      "rating": "4/4 stars (GuideStar India)"
+    },
+    "certifications": [
+      "FCRA Registration",
+      "12A and 80G Tax Exemption",
+      "GuideStar India Transparency Seal"
+    ],
+    "donationUrl": "https://www.wti.org.in/donate/",
+    "contact": {
+      "website": "https://www.wti.org.in/",
+      "email": "info@wti.org.in",
+      "phone": "+91-11-2671-6117",
+      "address": "A-220, New Friends Colony, New Delhi - 110065"
+    },
+    "socialMedia": {
+      "facebook": "https://www.facebook.com/WildlifeTrustofIndia",
+      "twitter": "https://twitter.com/wti_org_in",
+      "instagram": "https://www.instagram.com/wildlifetrustofindia/",
+      "youtube": "https://www.youtube.com/user/WildlifeTrustIndia"
+    },
+    "verified": true,
+    "trustScore": 92
+  },
+  {
+    "id": "ffi",
+    "name": "Fauna & Flora International",
+    "fullName": "Fauna & Flora International",
+    "logo": "/images/organizations/ffi-logo.png",
+    "established": 1903,
+    "headquarters": "Cambridge, UK (India Office: Bangalore)",
+    "type": "International Conservation Organization",
+    "registration": "UK Charity No. 1011102",
+    "mission": "To conserve threatened species and ecosystems worldwide, choosing solutions that are sustainable, based on sound science and take account of human needs.",
+    "focusAreas": [
+      "Biodiversity Conservation",
+      "Habitat Restoration",
+      "Community-based Conservation",
+      "Species Protection",
+      "Sustainable Livelihoods"
+    ],
+    "keyPrograms": [
+      {
+        "name": "Western Ghats Conservation",
+        "description": "Protecting biodiversity hotspot through community engagement",
+        "impact": "50,000 hectares of habitat restored"
+      },
+      {
+        "name": "Endemic Species Protection",
+        "description": "Conservation of endemic flora and fauna",
+        "impact": "200+ endemic species under protection programs"
+      },
+      {
+        "name": "Community Livelihoods",
+        "description": "Sustainable livelihood programs for forest communities",
+        "impact": "150 villages engaged in conservation activities"
+      }
+    ],
+    "financials": {
+      "totalRevenue": "£25 million globally (2022)",
+      "programExpenses": "82%",
+      "fundraisingExpenses": "12%",
+      "adminExpenses": "6%",
+      "rating": "4/4 stars (Charity Navigator)"
+    },
+    "certifications": [
+      "UK Charity Commission Registration",
+      "FCRA Registration (India)",
+      "ISO 14001 Environmental Management"
+    ],
+    "donationUrl": "https://www.fauna-flora.org/donate/",
+    "contact": {
+      "website": "https://www.fauna-flora.org/",
+      "email": "info@fauna-flora.org",
+      "phone": "+91-80-2341-1699 (India Office)",
+      "address": "India Office: #311, 2nd Floor, 7th Cross, Wilson Garden, Bangalore - 560027"
+    },
+    "socialMedia": {
+      "facebook": "https://www.facebook.com/faunaandflorainternational",
+      "twitter": "https://twitter.com/fauna_flora",
+      "instagram": "https://www.instagram.com/faunafloraint/",
+      "youtube": "https://www.youtube.com/user/FaunaFloraInt"
+    },
+    "verified": true,
+    "trustScore": 90
+  },
+  {
+    "id": "greenpeace-india",
+    "name": "Greenpeace India",
+    "fullName": "Greenpeace India Society",
+    "logo": "/images/organizations/greenpeace-india-logo.png",
+    "established": 2001,
+    "headquarters": "Bangalore, India",
+    "type": "Environmental NGO",
+    "registration": "Registered under Karnataka Societies Registration Act, 1960",
+    "mission": "To ensure the ability of the earth to nurture life in all its diversity through campaigning, lobbying, research, and public education.",
+    "focusAreas": [
+      "Climate Change",
+      "Forest Protection",
+      "Clean Energy",
+      "Sustainable Agriculture",
+      "Ocean Conservation"
+    ],
+    "keyPrograms": [
+      {
+        "name": "Forest Campaign",
+        "description": "Protecting India's forests from illegal logging and encroachment",
+        "impact": "25+ successful campaigns against deforestation"
+      },
+      {
+        "name": "Climate Action",
+        "description": "Advocating for renewable energy and climate policies",
+        "impact": "Influenced 10+ policy changes on environmental protection"
+      },
+      {
+        "name": "Community Mobilization",
+        "description": "Engaging citizens in environmental activism",
+        "impact": "50,000+ volunteers across India"
+      }
+    ],
+    "financials": {
+      "totalRevenue": "₹35 crores (2022-23)",
+      "programExpenses": "80%",
+      "fundraisingExpenses": "15%",
+      "adminExpenses": "5%",
+      "rating": "3/4 stars (Independent evaluation)"
+    },
+    "certifications": [
+      "Karnataka Societies Registration",
+      "12A and 80G Tax Exemption",
+      "Environmental Impact Assessment Certification"
+    ],
+    "donationUrl": "https://www.greenpeace.org/india/en/donate/",
+    "contact": {
+      "website": "https://www.greenpeace.org/india/",
+      "email": "supporter.services.in@greenpeace.org",
+      "phone": "+91-80-4115-4115",
+      "address": "#60, Richmond Road, Bangalore - 560025"
+    },
+    "socialMedia": {
+      "facebook": "https://www.facebook.com/GreenpeaceIndia",
+      "twitter": "https://twitter.com/GreenpeaceIndia",
+      "instagram": "https://www.instagram.com/greenpeaceindia/",
+      "youtube": "https://www.youtube.com/user/GreenpeaceIndia"
+    },
+    "verified": true,
+    "trustScore": 85
+  },
+  {
+    "id": "isha-foundation",
+    "name": "Isha Foundation",
+    "fullName": "Isha Foundation",
+    "logo": "/images/organizations/isha-foundation-logo.png",
+    "established": 1992,
+    "headquarters": "Coimbatore, Tamil Nadu",
+    "type": "Spiritual and Environmental NGO",
+    "registration": "Registered under Tamil Nadu Societies Registration Act, 1975",
+    "mission": "To raise human consciousness and foster global harmony through individual transformation and environmental restoration.",
+    "focusAreas": [
+      "Environmental Restoration",
+      "Rural Development",
+      "Education",
+      "Health",
+      "Spiritual Development"
+    ],
+    "keyPrograms": [
+      {
+        "name": "Cauvery Calling",
+        "description": "Massive tree planting initiative for Cauvery river basin",
+        "impact": "55 million trees planted, 165,000+ farmers supported"
+      },
+      {
+        "name": "Rally for Rivers",
+        "description": "Policy advocacy for river restoration",
+        "impact": "Influenced national river restoration policies"
+      },
+      {
+        "name": "Project GreenHands",
+        "description": "Community-based tree planting program",
+        "impact": "35 million trees planted across Tamil Nadu"
+      }
+    ],
+    "financials": {
+      "totalRevenue": "₹180 crores (2022-23)",
+      "programExpenses": "75%",
+      "fundraisingExpenses": "20%",
+      "adminExpenses": "5%",
+      "rating": "3/4 stars (GuideStar India)"
+    },
+    "certifications": [
+      "FCRA Registration",
+      "12A and 80G Tax Exemption",
+      "UN Consultative Status (ECOSOC)"
+    ],
+    "donationUrl": "https://cauvery.org/donate",
+    "contact": {
+      "website": "https://isha.sadhguru.org/",
+      "email": "info@ishafoundation.org",
+      "phone": "+91-422-2515-345",
+      "address": "Isha Yoga Center, Velliangiri Foothills, Coimbatore - 641114"
+    },
+    "socialMedia": {
+      "facebook": "https://www.facebook.com/sadhguru",
+      "twitter": "https://twitter.com/SadhguruJV",
+      "instagram": "https://www.instagram.com/sadhguru/",
+      "youtube": "https://www.youtube.com/user/sadhguru"
+    },
+    "verified": true,
+    "trustScore": 88
+  }
+]

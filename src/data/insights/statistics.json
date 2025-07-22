@@ -1,0 +1,40 @@
+{
+  "statistics": {
+    "totalForestCover": 712249,
+    "biodiversityCount": 91000,
+    "conservationProjects": 870,
+    "carbonSequestration": 7124.6
+  },
+  "regions": [
+    {
+      "name": "Western Ghats",
+      "area": 160000,
+      "biodiversity": ["Tigers", "Elephants", "Lion-tailed Macaque", "Nilgiri Tahr"],
+      "threats": ["Deforestation", "Human encroachment", "Climate change"],
+      "conservationStatus": "UNESCO World Heritage Site"
+    },
+    {
+      "name": "Eastern Himalayas",
+      "area": 218000,
+      "biodiversity": ["Red Panda", "Snow Leopard", "Himalayan Black Bear", "Musk Deer"],
+      "threats": ["Poaching", "Habitat fragmentation", "Climate change"],
+      "conservationStatus": "Biodiversity Hotspot"
+    }
+  ],
+  "species": [
+    {
+      "name": "Bengal Tiger",
+      "scientificName": "Panthera tigris tigris",
+      "status": "Endangered",
+      "habitat": "Tropical forests, grasslands",
+      "imageUrl": "/images/species/bengal-tiger.jpg"
+    },
+    {
+      "name": "Indian Elephant",
+      "scientificName": "Elephas maximus indicus",
+      "status": "Endangered",
+      "habitat": "Tropical forests, grasslands",
+      "imageUrl": "/images/species/indian-elephant.jpg"
+    }
+  ]
+}

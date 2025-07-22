@@ -1,0 +1,98 @@
+/* Parallax Loading States */
+.parallax-loading {
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.parallax-loaded {
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.parallax-error {
+  opacity: 0.5;
+  filter: grayscale(100%);
+  transition: opacity 0.3s ease-in-out, filter 0.3s ease-in-out;
+}
+
+/* Loading spinner for parallax images */
+.parallax-loading::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 20px;
+  height: 20px;
+  margin: -10px 0 0 -10px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-top: 2px solid rgba(255, 255, 255, 0.8);
+  border-radius: 50%;
+  animation: parallax-spin 1s linear infinite;
+  z-index: 1000;
+}
+
+@keyframes parallax-spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Performance optimizations */
+.parallax {
+  will-change: transform;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+}
+
+.parallax-active {
+  /* Only active parallax elements get hardware acceleration */
+  transform: translateZ(0);
+}
+
+/* Smooth transitions for parallax elements */
+.parallax {
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* Error state styling */
+.parallax-error::after {
+  content: '⚠️';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 24px;
+  z-index: 1001;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 8px;
+  border-radius: 4px;
+  color: white;
+}
+
+/* Reduce motion for users who prefer it */
+@media (prefers-reduced-motion: reduce) {
+  .parallax {
+    transform: none !important;
+    animation: none !important;
+    transition: none !important;
+  }
+  
+  .parallax-loading::before {
+    animation: none;
+  }
+}
+
+/* Mobile optimizations */
+@media (max-width: 768px) {
+  .parallax {
+    /* Reduce parallax intensity on mobile for better performance */
+    transform: translateZ(0) !important;
+  }
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  .parallax-loading::before {
+    border-color: currentColor;
+    border-top-color: transparent;
+  }
+}

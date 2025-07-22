@@ -1,0 +1,15 @@
+{
+  "buildTime": "2025-07-21T22:35:18.898Z",
+  "nodeVersion": "v20.15.1",
+  "environment": "production",
+  "version": "0.1.0",
+  "commit": "unknown",
+  "branch": "unknown",
+  "optimizations": {
+    "imageOptimization": true,
+    "codeMinification": true,
+    "bundleSplitting": true,
+    "serviceWorker": true,
+    "webVitalsMonitoring": true
+  }
+}

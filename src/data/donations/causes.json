@@ -1,0 +1,132 @@
+[
+  {
+    "id": "wwf-india-forests",
+    "title": "Protect India's Forest Ecosystems",
+    "organization": "WWF India",
+    "shortDescription": "Supporting forest conservation and wildlife protection across India's biodiversity hotspots.",
+    "fullDescription": "WWF India works to conserve India's forests through community-based conservation, anti-poaching efforts, and habitat restoration. Their programs focus on protecting endangered species like tigers, elephants, and rhinos while supporting local communities.",
+    "category": "Forest Conservation",
+    "location": "Pan-India",
+    "established": 1969,
+    "impact": {
+      "forestsProtected": "2.5 million hectares",
+      "speciesConserved": "50+ endangered species",
+      "communitiesSupported": "10,000+ families",
+      "treesPlanted": "500,000+ trees"
+    },
+    "transparency": {
+      "financialRating": "4/4 stars",
+      "programExpenses": "85%",
+      "adminExpenses": "15%"
+    },
+    "donationUrl": "https://www.wwfindia.org/donate/",
+    "websiteUrl": "https://www.wwfindia.org/",
+    "imageUrl": "/images/donations/wwf-india.jpg",
+    "verified": true,
+    "featured": true
+  },
+  {
+    "id": "wti-elephant-corridors",
+    "title": "Create Safe Passages for Elephants",
+    "organization": "Wildlife Trust of India",
+    "shortDescription": "Building elephant corridors to reduce human-wildlife conflict and protect migration routes.",
+    "fullDescription": "WTI's Right of Passage program creates and maintains elephant corridors across India, ensuring safe passage for elephants between fragmented forest areas. This reduces human-elephant conflict and maintains genetic diversity.",
+    "category": "Wildlife Corridors",
+    "location": "Assam, Karnataka, Tamil Nadu, West Bengal",
+    "established": 1998,
+    "impact": {
+      "corridorsCreated": "15 elephant corridors",
+      "conflictReduction": "60% decrease in incidents",
+      "elephantsProtected": "3,000+ elephants",
+      "landSecured": "25,000 acres"
+    },
+    "transparency": {
+      "financialRating": "4/4 stars",
+      "programExpenses": "88%",
+      "adminExpenses": "12%"
+    },
+    "donationUrl": "https://www.wti.org.in/donate/",
+    "websiteUrl": "https://www.wti.org.in/",
+    "imageUrl": "/images/donations/wti-elephants.jpg",
+    "verified": true,
+    "featured": true
+  },
+  {
+    "id": "ffi-western-ghats",
+    "title": "Restore Western Ghats Biodiversity",
+    "organization": "Fauna & Flora International",
+    "shortDescription": "Protecting and restoring the biodiversity hotspot of Western Ghats through community engagement.",
+    "fullDescription": "FFI works with local communities in the Western Ghats to restore degraded forests, protect endemic species, and develop sustainable livelihoods. The program focuses on habitat restoration and species conservation.",
+    "category": "Habitat Restoration",
+    "location": "Western Ghats (Kerala, Karnataka, Tamil Nadu)",
+    "established": 1903,
+    "impact": {
+      "habitatRestored": "50,000 hectares",
+      "endemicSpeciesProtected": "200+ species",
+      "seedlingsPlanted": "1 million seedlings",
+      "communitiesEngaged": "150 villages"
+    },
+    "transparency": {
+      "financialRating": "4/4 stars",
+      "programExpenses": "82%",
+      "adminExpenses": "18%"
+    },
+    "donationUrl": "https://www.fauna-flora.org/donate/",
+    "websiteUrl": "https://www.fauna-flora.org/",
+    "imageUrl": "/images/donations/ffi-western-ghats.jpg",
+    "verified": true,
+    "featured": false
+  },
+  {
+    "id": "greenpeace-forest-campaign",
+    "title": "Stop Deforestation in India",
+    "organization": "Greenpeace India",
+    "shortDescription": "Campaigning against illegal logging and promoting sustainable forest management practices.",
+    "fullDescription": "Greenpeace India's forest campaign works to expose illegal logging, advocate for stronger forest protection laws, and promote community-based forest management. They focus on policy advocacy and grassroots mobilization.",
+    "category": "Forest Protection",
+    "location": "Pan-India",
+    "established": 2001,
+    "impact": {
+      "campaignsLaunched": "25+ campaigns",
+      "policiesInfluenced": "10+ policy changes",
+      "illegalLoggingExposed": "500+ cases",
+      "volunteersEngaged": "50,000+ activists"
+    },
+    "transparency": {
+      "financialRating": "3/4 stars",
+      "programExpenses": "80%",
+      "adminExpenses": "20%"
+    },
+    "donationUrl": "https://www.greenpeace.org/india/en/donate/",
+    "websiteUrl": "https://www.greenpeace.org/india/",
+    "imageUrl": "/images/donations/greenpeace-india.jpg",
+    "verified": true,
+    "featured": false
+  },
+  {
+    "id": "isha-cauvery-calling",
+    "title": "Revitalize Cauvery River Basin",
+    "organization": "Isha Foundation",
+    "shortDescription": "Large-scale tree planting initiative to restore the Cauvery river basin ecosystem.",
+    "fullDescription": "Cauvery Calling is a massive tree planting movement to plant 2.42 billion trees in the Cauvery river basin. The initiative supports farmers in tree-based agriculture, improving soil health and water retention.",
+    "category": "Watershed Restoration",
+    "location": "Tamil Nadu, Karnataka",
+    "established": 2019,
+    "impact": {
+      "treesPlanted": "55 million trees",
+      "farmersSupported": "165,000+ farmers",
+      "areaRevitalized": "83,000+ acres",
+      "soilHealthImproved": "40% increase in organic content"
+    },
+    "transparency": {
+      "financialRating": "3/4 stars",
+      "programExpenses": "75%",
+      "adminExpenses": "25%"
+    },
+    "donationUrl": "https://cauvery.org/donate",
+    "websiteUrl": "https://cauvery.org/",
+    "imageUrl": "/images/donations/cauvery-calling.jpg",
+    "verified": true,
+    "featured": true
+  }
+]

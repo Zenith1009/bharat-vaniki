@@ -1,0 +1,87 @@
+{
+  "quiz": {
+    "title": "Indian Forests & Ecosystems Quiz",
+    "description": "Test your knowledge about India's diverse forests, wildlife, and conservation efforts",
+    "version": "1.0.0",
+    "settings": {
+      "defaultQuestionCount": 10,
+      "maxQuestionCount": 20,
+      "timePerQuestion": 30,
+      "showExplanations": true,
+      "allowRetake": true,
+      "shuffleQuestions": true,
+      "shuffleOptions": false,
+      "showProgressBar": true,
+      "showScore": true
+    },
+    "scoring": {
+      "passingScore": 60,
+      "perfectScore": 100,
+      "bonusPoints": {
+        "streakBonus": 5,
+        "speedBonus": 2,
+        "perfectBonus": 10
+      }
+    },
+    "feedback": {
+      "excellent": {
+        "threshold": 90,
+        "message": "Excellent! You're a true forest conservation champion!",
+        "badge": "🏆"
+      },
+      "good": {
+        "threshold": 70,
+        "message": "Great job! You have solid knowledge about Indian forests.",
+        "badge": "🌟"
+      },
+      "average": {
+        "threshold": 50,
+        "message": "Good effort! Keep learning about our amazing forests.",
+        "badge": "🌱"
+      },
+      "needsImprovement": {
+        "threshold": 0,
+        "message": "Keep exploring! There's so much to discover about Indian forests.",
+        "badge": "🌿"
+      }
+    },
+    "achievements": [
+      {
+        "id": "first_quiz",
+        "name": "Forest Explorer",
+        "description": "Complete your first quiz",
+        "icon": "🌲"
+      },
+      {
+        "id": "perfect_score",
+        "name": "Forest Expert",
+        "description": "Score 100% on any quiz",
+        "icon": "🏆"
+      },
+      {
+        "id": "biodiversity_master",
+        "name": "Biodiversity Master",
+        "description": "Score 90% or higher on biodiversity questions",
+        "icon": "🦋"
+      },
+      {
+        "id": "conservation_champion",
+        "name": "Conservation Champion",
+        "description": "Score 90% or higher on conservation questions",
+        "icon": "🌱"
+      },
+      {
+        "id": "ecology_expert",
+        "name": "Ecology Expert",
+        "description": "Score 90% or higher on ecology questions",
+        "icon": "🌿"
+      },
+      {
+        "id": "quiz_streak",
+        "name": "Dedicated Learner",
+        "description": "Complete 5 quizzes in a row",
+        "icon": "🔥"
+      }
+    ]
+  }
+}

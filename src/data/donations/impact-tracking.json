@@ -1,0 +1,162 @@
+{
+  "overallImpact": {
+    "totalDonationsTracked": "₹125 crores",
+    "forestsProtected": "3.2 million hectares",
+    "treesPlanted": "56.5 million trees",
+    "wildlifeProtected": "75,000+ animals",
+    "communitiesSupported": "185,000+ families",
+    "lastUpdated": "2024-01-15"
+  },
+  "impactCategories": [
+    {
+      "category": "Forest Conservation",
+      "totalFunding": "₹45 crores",
+      "metrics": [
+        {
+          "metric": "Forest Area Protected",
+          "value": "2.5 million hectares",
+          "description": "Total forest area under active protection programs"
+        },
+        {
+          "metric": "Illegal Logging Cases Prevented",
+          "value": "500+ cases",
+          "description": "Illegal logging activities stopped through monitoring and advocacy"
+        },
+        {
+          "metric": "Forest Fire Prevention",
+          "value": "85% reduction",
+          "description": "Reduction in forest fires through early warning systems"
+        }
+      ]
+    },
+    {
+      "category": "Wildlife Protection",
+      "totalFunding": "₹35 crores",
+      "metrics": [
+        {
+          "metric": "Animals Rescued",
+          "value": "10,000+ animals",
+          "description": "Wildlife rescued from conflict situations and rehabilitated"
+        },
+        {
+          "metric": "Anti-Poaching Operations",
+          "value": "200+ operations",
+          "description": "Successful anti-poaching operations conducted"
+        },
+        {
+          "metric": "Wildlife Corridors Created",
+          "value": "15 corridors",
+          "description": "Safe passages created for wildlife movement"
+        }
+      ]
+    },
+    {
+      "category": "Habitat Restoration",
+      "totalFunding": "₹30 crores",
+      "metrics": [
+        {
+          "metric": "Degraded Land Restored",
+          "value": "75,000 hectares",
+          "description": "Previously degraded forest land restored to healthy ecosystems"
+        },
+        {
+          "metric": "Native Species Reintroduced",
+          "value": "150+ species",
+          "description": "Native plant and animal species reintroduced to restored habitats"
+        },
+        {
+          "metric": "Soil Health Improvement",
+          "value": "40% increase",
+          "description": "Average improvement in soil organic content in restored areas"
+        }
+      ]
+    },
+    {
+      "category": "Community Engagement",
+      "totalFunding": "₹15 crores",
+      "metrics": [
+        {
+          "metric": "Families Supported",
+          "value": "185,000+ families",
+          "description": "Local families engaged in conservation activities with livelihood support"
+        },
+        {
+          "metric": "Training Programs Conducted",
+          "value": "500+ programs",
+          "description": "Training programs on sustainable practices and conservation"
+        },
+        {
+          "metric": "Women Empowerment Initiatives",
+          "value": "25,000+ women",
+          "description": "Women involved in forest conservation and sustainable livelihood programs"
+        }
+      ]
+    }
+  ],
+  "donationBreakdown": {
+    "₹500": {
+      "impact": "Plants 50 native tree saplings",
+      "equivalentTo": "Offsets 1 ton of CO2 annually",
+      "timeframe": "Immediate planting, 20-year impact"
+    },
+    "₹1000": {
+      "impact": "Supports 1 forest guard for 1 month",
+      "equivalentTo": "Protects 100 hectares of forest",
+      "timeframe": "Monthly protection coverage"
+    },
+    "₹2500": {
+      "impact": "Rescues and rehabilitates 1 injured wildlife",
+      "equivalentTo": "Complete medical care and release",
+      "timeframe": "3-6 months rehabilitation"
+    },
+    "₹5000": {
+      "impact": "Establishes 1 hectare of wildlife corridor",
+      "equivalentTo": "Safe passage for 100+ animals annually",
+      "timeframe": "Permanent corridor establishment"
+    },
+    "₹10000": {
+      "impact": "Supports 1 village conservation program for 1 year",
+      "equivalentTo": "Engages 50 families in sustainable practices",
+      "timeframe": "Annual program support"
+    },
+    "₹25000": {
+      "impact": "Funds anti-poaching operations for 3 months",
+      "equivalentTo": "Protects 1000 hectares from poaching",
+      "timeframe": "Quarterly protection coverage"
+    }
+  },
+  "transparencyMetrics": {
+    "fundUtilization": {
+      "directConservation": "75%",
+      "communitySupport": "15%",
+      "administration": "7%",
+      "fundraising": "3%"
+    },
+    "reportingFrequency": "Monthly impact reports",
+    "auditFrequency": "Annual third-party audits",
+    "publicReporting": "Quarterly public impact dashboards"
+  },
+  "successStories": [
+    {
+      "title": "Tiger Population Recovery in Ranthambore",
+      "description": "Through sustained conservation efforts, tiger population in Ranthambore increased from 40 to 75 tigers over 5 years.",
+      "funding": "₹8 crores over 5 years",
+      "impact": "87% increase in tiger population",
+      "location": "Ranthambore National Park, Rajasthan"
+    },
+    {
+      "title": "Elephant Corridor Success in Assam",
+      "description": "Creation of elephant corridors reduced human-elephant conflict by 60% while ensuring safe passage for 500+ elephants.",
+      "funding": "₹5 crores over 3 years",
+      "impact": "60% reduction in human-elephant conflict",
+      "location": "Kaziranga-Karbi Anglong, Assam"
+    },
+    {
+      "title": "Western Ghats Restoration Project",
+      "description": "Restored 10,000 hectares of degraded forest land, bringing back 50+ endemic species to the region.",
+      "funding": "₹12 crores over 7 years",
+      "impact": "10,000 hectares restored, 50+ species recovered",
+      "location": "Western Ghats, Kerala-Karnataka border"
+    }
+  ]
+}

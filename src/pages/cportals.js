@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import Head from 'next/head';
 import { Menu } from 'lucide-react';
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
@@ -7,18 +8,19 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
+import { motion } from 'framer-motion';
 import Link from 'next/link';
-import ItineraryNavbar from "./itineraryNavbar";
+
 
 const Sidebar = () => (
   <nav className="flex flex-col gap-4 mt-8">
     <Link href="/" className="text-lg hover:underline transition-colors duration-200 hover:text-green-200">Home</Link>
-    <Link href="/forests" className="text-lg hover:underline transition-colors duration-200 hover:text-green-200">Forests</Link>
-    <Link href="/gallery" className="text-lg hover:underline transition-colors duration-200 hover:text-green-200">Gallery</Link>
-    <Link href="/plan-your-trip" className="text-lg hover:underline transition-colors duration-200 hover:text-green-200">Plan Your Trip</Link>
-    <Link href="/conservation-efforts" className="text-lg hover:underline transition-colors duration-200 hover:text-green-200">Conservation Efforts</Link>
-    <Link href="/cp" className="text-lg hover:underline transition-colors duration-200 hover:text-green-200">Career Portal</Link>
-    <Link href="/about" className="text-lg hover:underline transition-colors duration-200 hover:text-green-200">About</Link>
+    <Link href="/destinations" className="text-lg hover:underline transition-colors duration-200 hover:text-green-200">Destinations</Link>
+    <Link href="/photography" className="text-lg hover:underline transition-colors duration-200 hover:text-green-200">Photography</Link>
+    <Link href="/itineraries" className="text-lg hover:underline transition-colors duration-200 hover:text-green-200">Itineraries</Link>
+    <Link href="/insights" className="text-lg hover:underline transition-colors duration-200 hover:text-green-200">Insights</Link>
+    <Link href="/cportals" className="text-lg hover:underline transition-colors duration-200 hover:text-green-200">Career Portal</Link>
+    <Link href="/about_us" className="text-lg hover:underline transition-colors duration-200 hover:text-green-200">About</Link>
   </nav>
 );
 
@@ -114,7 +116,21 @@ const CareerPortalPage = () => {
   };
 
   return (
-    <div className="min-h-screen flex flex-col bg-green-50 relative overflow-hidden">
+    <>
+      <Head>
+        <title>Forest Career Portal - Jobs in Forest Conservation & Management</title>
+        <meta 
+          name="description" 
+          content="Explore career opportunities in forest conservation, wildlife management, and environmental protection. Join our team of forestry professionals making a difference." 
+        />
+        <meta name="keywords" content="forest jobs, conservation careers, wildlife management jobs, forestry careers, environmental jobs India" />
+        <meta property="og:title" content="Forest Career Portal - Jobs in Forest Conservation & Management" />
+        <meta property="og:description" content="Find exciting career opportunities in forest conservation and wildlife management. Make a difference in protecting India's natural heritage." />
+        <meta property="og:type" content="website" />
+        <link rel="canonical" href="/cportals" />
+      </Head>
+
+      <div className="min-h-screen flex flex-col bg-green-50 relative overflow-hidden">
       <div className="relative">
         <div
           className="absolute inset-0 bg-cover bg-center z-0"
@@ -123,7 +139,7 @@ const CareerPortalPage = () => {
         <div className="absolute inset-0 bg-black opacity-50 z-10"></div>
         <div className="relative z-20">
           <div className="sunray-container absolute inset-0 z-10 pointer-events-none"></div>
-          <ItineraryNavbar />
+
 
           <main className="flex-grow p-4 relative z-20">
             <div className="max-w-4xl mx-auto">
@@ -283,29 +299,12 @@ const CareerPortalPage = () => {
             </div>
           </main>
 
-          <footer className="bg-green-800 text-white p-4 relative z-20">
-            <div className="container mx-auto flex flex-col md:flex-row justify-between items-center">
-              <div className="mb-2 md:mb-0">
-                <h3 className="text-lg font-semibold mb-1">Stay Connected</h3>
-                <div className="flex gap-4">
-                  <a href="#" className="text-white hover:text-green-200 transition-colors duration-200">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-instagram"><rect width="20" height="20" x="2" y="2" rx="5" ry="5" /><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" /><line x1="17.5" x2="17.51" y1="6.5" y2="6.5" /></svg>
-                  </a>
-                  <a href="#" className="text-white hover:text-green-200 transition-colors duration-200">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-twitter"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z" /></svg>
-                  </a>
-                </div>
-              </div>
-              <div className="text-center md:text-right">
-                <p className="text-sm">&copy; 2024 Indian Forests. All rights reserved.</p>
-                <p className="text-sm mt-1">Designed with 🌿 for nature lovers</p>
-              </div>
-            </div>
-          </footer>
+
         </div>
       </div>
 
     </div>
+    </>
   );
 };
 

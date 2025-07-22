@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
+import Head from 'next/head';
 import dynamic from 'next/dynamic';
 import { Instagram, Twitter, Facebook, Linkedin } from 'lucide-react';
 import { Button } from "@/components/ui/button";
@@ -77,10 +78,24 @@ const About = () => {
   };
 
   return (
-    <div
-      className="min-h-screen flex items-center justify-center bg-cover bg-center relative"
-      style={{ backgroundImage: "url('/bg.jpg')" }}
-    >
+    <>
+      <Head>
+        <title>About Us - Indian Forests Encyclopedia Team</title>
+        <meta 
+          name="description" 
+          content="Meet the team behind the Indian Forests Encyclopedia - SVNIT students passionate about showcasing India's biodiversity and promoting forest conservation efforts." 
+        />
+        <meta name="keywords" content="Indian forests team, SVNIT students, forest conservation, biodiversity website, Web Wonders 2024" />
+        <meta property="og:title" content="About Us - Indian Forests Encyclopedia Team" />
+        <meta property="og:description" content="Meet the passionate team of SVNIT students behind the Indian Forests Encyclopedia project." />
+        <meta property="og:type" content="website" />
+        <link rel="canonical" href="/about_us" />
+      </Head>
+
+      <div
+        className="min-h-screen flex items-center justify-center bg-cover bg-center relative"
+        style={{ backgroundImage: "url('/bg.jpg')" }}
+      >
       {confetti && isMoving &&
         <div style={confettiWrapperStyle}>
           <ReactConfetti
@@ -139,7 +154,8 @@ const About = () => {
           Move your cursor around to see a magical forest effect!
         </p>
       </div>
-    </div>
+      </div>
+    </>
   );
 };
 

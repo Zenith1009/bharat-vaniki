@@ -1,0 +1,302 @@
+[
+  {
+    "id": "q1",
+    "category": "biodiversity",
+    "question": "Which is the largest national park in India?",
+    "options": [
+      "Hemis National Park",
+      "Desert National Park",
+      "Gir National Park",
+      "Kaziranga National Park"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Hemis National Park in Ladakh is the largest national park in India, covering an area of 4,400 square kilometers. It's home to snow leopards, blue sheep, and other high-altitude wildlife.",
+    "difficulty": "medium",
+    "imageUrl": "/images/quiz/hemis-national-park.jpg"
+  },
+  {
+    "id": "q2",
+    "category": "conservation",
+    "question": "What percentage of India's geographical area is covered by forests?",
+    "options": [
+      "15.39%",
+      "21.71%",
+      "24.56%",
+      "18.92%"
+    ],
+    "correctAnswer": 1,
+    "explanation": "According to the India State of Forest Report 2021, forests cover 21.71% of India's geographical area, which is approximately 712,249 square kilometers.",
+    "difficulty": "easy",
+    "imageUrl": "/images/quiz/forest-cover.jpg"
+  },
+  {
+    "id": "q3",
+    "category": "biodiversity",
+    "question": "Which endangered big cat is found exclusively in the Gir Forest of Gujarat?",
+    "options": [
+      "Bengal Tiger",
+      "Asiatic Lion",
+      "Indian Leopard",
+      "Snow Leopard"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The Asiatic Lion is found only in the Gir Forest National Park in Gujarat. With a population of around 674 lions, it's a conservation success story.",
+    "difficulty": "easy",
+    "imageUrl": "/images/quiz/asiatic-lion.jpg"
+  },
+  {
+    "id": "q4",
+    "category": "ecology",
+    "question": "Which type of forest is characterized by trees that shed their leaves during dry seasons?",
+    "options": [
+      "Tropical Evergreen Forest",
+      "Tropical Deciduous Forest",
+      "Coniferous Forest",
+      "Mangrove Forest"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Tropical Deciduous Forests, also known as monsoon forests, shed their leaves during dry seasons to conserve water. These forests cover large parts of central and peninsular India.",
+    "difficulty": "medium",
+    "imageUrl": "/images/quiz/deciduous-forest.jpg"
+  },
+  {
+    "id": "q5",
+    "category": "conservation",
+    "question": "What is the primary objective of Project Tiger launched in India?",
+    "options": [
+      "Increase tiger population in zoos",
+      "Protect tiger habitats and increase wild tiger population",
+      "Study tiger behavior",
+      "Create tiger reserves for tourism"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Project Tiger was launched in 1973 to protect tiger habitats and increase the wild tiger population. It has been successful in increasing India's tiger population from 1,411 in 2006 to over 2,967 in 2019.",
+    "difficulty": "easy",
+    "imageUrl": "/images/quiz/project-tiger.jpg"
+  },
+  {
+    "id": "q6",
+    "category": "biodiversity",
+    "question": "Which bird sanctuary in Rajasthan is famous for the Siberian Crane migration?",
+    "options": [
+      "Bharatpur Bird Sanctuary",
+      "Tal Chhapar Sanctuary",
+      "Desert National Park",
+      "Sariska Tiger Reserve"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Bharatpur Bird Sanctuary (Keoladeo National Park) was historically famous for Siberian Crane migration, though they haven't visited since 2002 due to habitat changes along their migration route.",
+    "difficulty": "medium",
+    "imageUrl": "/images/quiz/bharatpur-sanctuary.jpg"
+  },
+  {
+    "id": "q7",
+    "category": "ecology",
+    "question": "What is the term for the variety of plant and animal life in a particular habitat?",
+    "options": [
+      "Ecosystem",
+      "Biodiversity",
+      "Biome",
+      "Food Chain"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Biodiversity refers to the variety of plant and animal life in a particular habitat or ecosystem. India is one of the 17 megadiverse countries, hosting 4 biodiversity hotspots.",
+    "difficulty": "easy",
+    "imageUrl": "/images/quiz/biodiversity.jpg"
+  },
+  {
+    "id": "q8",
+    "category": "conservation",
+    "question": "Which Indian state has the highest forest cover percentage?",
+    "options": [
+      "Madhya Pradesh",
+      "Arunachal Pradesh",
+      "Chhattisgarh",
+      "Odisha"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Arunachal Pradesh has the highest forest cover percentage at 79.63% of its geographical area, followed by Mizoram at 85.41%. However, Madhya Pradesh has the largest forest area in absolute terms.",
+    "difficulty": "hard",
+    "imageUrl": "/images/quiz/arunachal-forests.jpg"
+  },
+  {
+    "id": "q9",
+    "category": "biodiversity",
+    "question": "Which is the only floating national park in the world, located in India?",
+    "options": [
+      "Sundarbans National Park",
+      "Keibul Lamjao National Park",
+      "Vembanad-Kol Wetland",
+      "Chilika Lake"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Keibul Lamjao National Park in Manipur is the only floating national park in the world. It's home to the endangered Sangai deer and consists of floating biomass called 'phumdi'.",
+    "difficulty": "hard",
+    "imageUrl": "/images/quiz/keibul-lamjao.jpg"
+  },
+  {
+    "id": "q10",
+    "category": "ecology",
+    "question": "What role do mangrove forests play in coastal protection?",
+    "options": [
+      "They provide timber for construction",
+      "They act as natural barriers against storms and tsunamis",
+      "They increase salinity in coastal waters",
+      "They reduce fish populations"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Mangrove forests act as natural barriers against storms, tsunamis, and coastal erosion. They also serve as nurseries for marine life and help in carbon sequestration.",
+    "difficulty": "medium",
+    "imageUrl": "/images/quiz/mangrove-protection.jpg"
+  },
+  {
+    "id": "q11",
+    "category": "general",
+    "question": "Which tree is known as the 'Tree of Life' and is native to India?",
+    "options": [
+      "Banyan Tree",
+      "Neem Tree",
+      "Peepal Tree",
+      "Coconut Tree"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The Neem tree is often called the 'Tree of Life' due to its numerous medicinal properties and uses. Every part of the neem tree has beneficial properties for health and agriculture.",
+    "difficulty": "easy",
+    "imageUrl": "/images/quiz/neem-tree.jpg"
+  },
+  {
+    "id": "q12",
+    "category": "conservation",
+    "question": "What is the main cause of deforestation in India?",
+    "options": [
+      "Industrial development",
+      "Agricultural expansion",
+      "Urban development",
+      "Mining activities"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Agricultural expansion is the primary cause of deforestation in India, accounting for about 60% of forest loss. This includes both crop cultivation and livestock grazing.",
+    "difficulty": "medium",
+    "imageUrl": "/images/quiz/deforestation-causes.jpg"
+  },
+  {
+    "id": "q13",
+    "category": "biodiversity",
+    "question": "Which Indian rhinoceros species is found in Kaziranga National Park?",
+    "options": [
+      "Black Rhinoceros",
+      "White Rhinoceros",
+      "Greater One-horned Rhinoceros",
+      "Sumatran Rhinoceros"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The Greater One-horned Rhinoceros (Indian Rhinoceros) is found in Kaziranga National Park, Assam. Kaziranga hosts about 70% of the world's population of this species.",
+    "difficulty": "medium",
+    "imageUrl": "/images/quiz/indian-rhinoceros.jpg"
+  },
+  {
+    "id": "q14",
+    "category": "ecology",
+    "question": "What is the process by which forests help in regulating the water cycle?",
+    "options": [
+      "Photosynthesis",
+      "Transpiration",
+      "Respiration",
+      "Decomposition"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Transpiration is the process by which trees release water vapor through their leaves, contributing to cloud formation and rainfall. This helps regulate the local and regional water cycle.",
+    "difficulty": "medium",
+    "imageUrl": "/images/quiz/transpiration-cycle.jpg"
+  },
+  {
+    "id": "q15",
+    "category": "general",
+    "question": "Which is India's first Biosphere Reserve?",
+    "options": [
+      "Nilgiri Biosphere Reserve",
+      "Nanda Devi Biosphere Reserve",
+      "Sundarbans Biosphere Reserve",
+      "Gulf of Mannar Biosphere Reserve"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Nilgiri Biosphere Reserve, established in 1986, was India's first biosphere reserve. It encompasses parts of Tamil Nadu, Kerala, and Karnataka, including several national parks and wildlife sanctuaries.",
+    "difficulty": "hard",
+    "imageUrl": "/images/quiz/nilgiri-biosphere.jpg"
+  },
+  {
+    "id": "q16",
+    "category": "conservation",
+    "question": "What does CITES stand for in wildlife conservation?",
+    "options": [
+      "Convention on International Trade in Endangered Species",
+      "Committee for International Tiger Enhancement Scheme",
+      "Conservation Initiative for Threatened Ecosystems and Species",
+      "Central Indian Tiger Estimation Survey"
+    ],
+    "correctAnswer": 0,
+    "explanation": "CITES stands for Convention on International Trade in Endangered Species of Wild Fauna and Flora. It's an international agreement to ensure that international trade doesn't threaten species survival.",
+    "difficulty": "hard",
+    "imageUrl": "/images/quiz/cites-convention.jpg"
+  },
+  {
+    "id": "q17",
+    "category": "biodiversity",
+    "question": "Which endemic bird species is found in the Western Ghats?",
+    "options": [
+      "Great Indian Bustard",
+      "Malabar Grey Hornbill",
+      "Sarus Crane",
+      "Indian Peafowl"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The Malabar Grey Hornbill is endemic to the Western Ghats. It plays a crucial role in seed dispersal and is an indicator species for forest health in this biodiversity hotspot.",
+    "difficulty": "hard",
+    "imageUrl": "/images/quiz/malabar-hornbill.jpg"
+  },
+  {
+    "id": "q18",
+    "category": "ecology",
+    "question": "What is the primary function of mycorrhizal fungi in forest ecosystems?",
+    "options": [
+      "Decomposing dead organic matter",
+      "Helping plants absorb nutrients and water",
+      "Controlling pest populations",
+      "Producing oxygen"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Mycorrhizal fungi form symbiotic relationships with plant roots, helping them absorb nutrients (especially phosphorus) and water from the soil. This relationship is crucial for forest health and plant growth.",
+    "difficulty": "hard",
+    "imageUrl": "/images/quiz/mycorrhizal-fungi.jpg"
+  },
+  {
+    "id": "q19",
+    "category": "general",
+    "question": "Which Indian state is known as the 'Spice Garden of India'?",
+    "options": [
+      "Tamil Nadu",
+      "Karnataka",
+      "Kerala",
+      "Andhra Pradesh"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Kerala is known as the 'Spice Garden of India' due to its rich biodiversity of spice plants like cardamom, pepper, cinnamon, and cloves that grow in its forests and plantations.",
+    "difficulty": "easy",
+    "imageUrl": "/images/quiz/kerala-spices.jpg"
+  },
+  {
+    "id": "q20",
+    "category": "conservation",
+    "question": "What is the concept of 'carbon sequestration' in forests?",
+    "options": [
+      "Release of carbon dioxide by trees",
+      "Storage of carbon in tree biomass and soil",
+      "Conversion of carbon to oxygen",
+      "Transportation of carbon through root systems"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Carbon sequestration in forests refers to the process of capturing and storing atmospheric carbon dioxide in tree biomass (wood, roots, leaves) and forest soil. This helps mitigate climate change.",
+    "difficulty": "medium",
+    "imageUrl": "/images/quiz/carbon-sequestration.jpg"
+  }
+]
