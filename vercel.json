@@ -1,8 +1,7 @@
 {
   "version": 2,
-  "name": "indian-forests-encyclopedia",
   "alias": ["indian-forests-ecosystem.vercel.app"],
-  "regions": ["bom1", "sin1", "hnd1"],
+  "regions": ["bom1"],
   "build": {
     "env": {
       "NEXT_PUBLIC_SITE_URL": "https://indian-forests-ecosystem.vercel.app",
