@@ -124,7 +124,7 @@ Make sure you have the following installed:
 
 ## 🌐 Deployment
 
-This project is deployed on **Vercel** at: 
+This project is deployed on **Vercel** at: [bharat-vaniki.vercel.app](https://bharat-vaniki.vercel.app/)
 
 ## 🎨 Component Architecture
 
