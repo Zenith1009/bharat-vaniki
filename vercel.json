@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "alias": ["indian-forests-ecosystem.vercel.app"],
+  "alias": ["bharat-vaniki.vercel.app"],
   "regions": ["bom1"],
   "build": {
     "env": {
-      "NEXT_PUBLIC_SITE_URL": "https://indian-forests-ecosystem.vercel.app",
+      "NEXT_PUBLIC_SITE_URL": "https://bharat-vaniki.vercel.app",
       "NODE_ENV": "production"
     }
   },
