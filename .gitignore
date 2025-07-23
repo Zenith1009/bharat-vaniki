@@ -8,6 +8,10 @@
 
 # testing
 /coverage
+QA_TEST_REPORT.md
+/test-results/
+*.test.log
+coverage.json
 
 # next.js
 /.next/
@@ -40,3 +44,53 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# deployment and build artifacts
+DEPLOYMENT_CHECKLIST.md
+deployment-report.json
+link-verification-report.json
+performance-report.json
+build-manifest.json
+
+# logs and reports
+*.log
+logs/
+reports/
+*.report.json
+*.report.html
+
+# temporary files
+*.tmp
+*.temp
+.cache/
+.temp/
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# backup files
+*.bak
+*.backup
+*.orig
+
+# compressed files (unless specifically needed)
+*.zip
+*.tar.gz
+*.rar
+
+# application specific
+applications.json
+components.json

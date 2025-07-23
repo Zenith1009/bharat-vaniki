@@ -4,12 +4,12 @@ import dynamic from 'next/dynamic';
 import { Instagram, Twitter, Facebook, Linkedin } from 'lucide-react';
 import { Button } from "@/components/ui/button";
 
-// Dynamically import the Confetti component without server-side rendering
-const ReactConfetti = dynamic(() => import('react-confetti'), { ssr: false });
+// Dynamically import the FallingLeaves component without server-side rendering
+const FallingLeaves = dynamic(() => import('@/components/effects/FallingLeaves'), { ssr: false });
 
 const About = () => {
-  // State to control the confetti display
-  const [confetti, setConfetti] = useState(false);
+  // State to control the leaves display
+  const [showLeaves, setShowLeaves] = useState(false);
 
   // Position of the mouse cursor
   const [position, setPosition] = useState({ x: 0, y: 0 });
@@ -41,15 +41,15 @@ const About = () => {
   const handleMouseMove = (e) => {
     setPosition({ x: e.clientX, y: e.clientY });
     setIsMoving(true);
-    setConfetti(true);
+    setShowLeaves(true);
 
     // Clear previous timeouts
     clearTimeout(timeoutRef.current);
 
-    // Set timeout to stop confetti after 100ms of no movement
+    // Set timeout to stop leaves after 300ms of no movement
     timeoutRef.current = setTimeout(() => {
       setIsMoving(false);
-      setConfetti(false);
+      setShowLeaves(false);
     }, 300);
   };
 
@@ -65,8 +65,8 @@ const About = () => {
     }
   }, []);
 
-  // Inline Styles for the confetti wrapper
-  const confettiWrapperStyle = {
+  // Inline Styles for the leaves wrapper
+  const leavesWrapperStyle = {
     position: 'absolute',
     top: 0,
     left: 0,
@@ -96,17 +96,15 @@ const About = () => {
         className="min-h-screen flex items-center justify-center bg-cover bg-center relative"
         style={{ backgroundImage: "url('/bg.jpg')" }}
       >
-      {confetti && isMoving &&
-        <div style={confettiWrapperStyle}>
-          <ReactConfetti
-            numberOfPieces={50}
-            gravity={0.2}
-            initialVelocityX={{ min: -5, max: 5 }}
-            initialVelocityY={{ min: -5, max: 5 }}
-            confettiSource={{ x: position.x, y: position.y }}
+      {showLeaves && isMoving &&
+        <div style={leavesWrapperStyle}>
+          <FallingLeaves
+            numberOfLeaves={40}
+            gravity={0.15}
+            windForce={0.03}
+            leafSource={{ x: position.x, y: position.y }}
             width={windowSize.width}
             height={windowSize.height}
-            recycle={true}
             run={isMoving}
           />
         </div>

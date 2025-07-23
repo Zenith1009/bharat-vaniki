@@ -15,7 +15,13 @@ export const isTrustedDonationUrl = (url) => {
     'greenpeace.org',
     'cauvery.org',
     'isha.sadhguru.org',
-    'ishafoundation.org'
+    'ishafoundation.org',
+    'wct-india.org',
+    'greenindiafoundation.org',
+    'sundarbanssociety.org',
+    'himalayanecology.org',
+    'wildlifeprotectionforce.org',
+    'ruraldevelopmenttrust.org'
   ];
 
   try {
