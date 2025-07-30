@@ -255,11 +255,10 @@ async function main() {
     log(`${colors.blue}📊 Report saved to: deployment-report.json${colors.reset}`);
     
     log('\n📋 Next Steps:');
-    log('1. Review the deployment checklist (DEPLOYMENT_CHECKLIST.md)');
-    log('2. Push to main branch to trigger Vercel deployment');
-    log('3. Monitor the deployment in Vercel dashboard');
-    log('4. Run post-deployment smoke tests');
-    log('5. Verify analytics and monitoring are working');
+    log('1. Push to main branch to trigger Vercel deployment');
+    log('2. Monitor the deployment in Vercel dashboard');
+    log('3. Run post-deployment smoke tests');
+    log('4. Verify analytics and monitoring are working');
 
     process.exit(0);
 

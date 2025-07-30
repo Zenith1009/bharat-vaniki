@@ -46,7 +46,6 @@ yarn-error.log*
 next-env.d.ts
 
 # deployment and build artifacts
-DEPLOYMENT_CHECKLIST.md
 deployment-report.json
 link-verification-report.json
 performance-report.json
