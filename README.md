@@ -1,25 +1,12 @@
 # Bharat वानिकी 🌲
 
-![Next.js](https://img.shields.io/badge/Next.js-14-black?style=for-the-badge&logo=next.js&logoColor=white)
-![React](https://img.shields.io/badge/React-18-61DAFB?style=for-the-badge&logo=react&logoColor=black)
-![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
-![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white)
-![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
-
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-![GSAP](https://img.shields.io/badge/GSAP-88CE02?style=for-the-badge&logo=greensock&logoColor=white)
-![Framer Motion](https://img.shields.io/badge/Framer_Motion-0055FF?style=for-the-badge&logo=framer&logoColor=white)
-
-![Competition](https://img.shields.io/badge/Web_Wonders_'24-Finalist-gold?style=for-the-badge&logo=trophy&logoColor=white)
-![Contributors](https://img.shields.io/badge/Contributors-4-green?style=for-the-badge&logo=github&logoColor=white)
-
 A modern, interactive web platform dedicated to showcasing the beauty, importance, and conservation of Indian forests and ecosystems. This project was developed for the **Web Wonders '24** competition, where our team **Neutrons** achieved **finalist** status.
 
 ## 🏆 Competition Achievement
 
 This project was created for the Forestry track in **Web Wonders '24**, a prestigious web development competition held by NEXUS Club of SVNIT for second year students, where we proudly reached the **finals**. 
+
+![Competition](https://img.shields.io/badge/Web_Wonders_'24-Finalist-gold?style=for-the-badge&logo=trophy&logoColor=white)
 
 ## 👥 Contributors
 
@@ -51,6 +38,21 @@ This platform bridges the gap between environmental awareness and digital engage
 - ♿ **Accessible Design** - WCAG compliant with keyboard navigation support
 
 ## 🛠️ Tech Stack
+
+![Next.js](https://img.shields.io/badge/Next.js-14-black?style=for-the-badge&logo=next.js&logoColor=white)
+![React](https://img.shields.io/badge/React-18-61DAFB?style=for-the-badge&logo=react&logoColor=black)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white)
+![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
+
+---
+
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![GSAP](https://img.shields.io/badge/GSAP-88CE02?style=for-the-badge&logo=greensock&logoColor=white)
+![Framer Motion](https://img.shields.io/badge/Framer_Motion-0055FF?style=for-the-badge&logo=framer&logoColor=white)
+
 
 ### Frontend Framework
 - **Next.js 14** - React framework with Page Router
@@ -100,15 +102,9 @@ Make sure you have the following installed:
    
    Create a `.env.local` file in the root directory and add the following variables:
    ```env
-   # Supabase Configuration (if using database features)
+   # Supabase Configuration
    NEXT_PUBLIC_SUPABASE_URL=your_supabase_url
    NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key
-   
-   # Analytics Configuration (Optional)
-   NEXT_PUBLIC_GA_MEASUREMENT_ID=G-XXXXXXXXXX
-   
-   # Monitoring Configuration (Optional)
-   NEXT_PUBLIC_MONITORING_ENABLED=true
    ```
 
 4. **Run the development server**
