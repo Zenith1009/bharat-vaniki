@@ -90,6 +90,7 @@ const CareerPortalPage = () => {
         alert('Error submitting application. Please try again.');
       }
     } catch (error) {
+      console.log('Error submitting application')
       console.error('Error submitting application:', error);
       alert('Error submitting application. Please try again.');
     }
